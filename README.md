@@ -9,7 +9,7 @@
 - User is able to search for strains by recommendations and have the ability to save favorite strains and look for local dispensaries.
 
 
-### What is the mission statement?
+### What is the mission statement? 
 - We will create an app that efficiently assists the user in finding the best strain for them.
 
 
