@@ -11,7 +11,7 @@ function App() {
         <PrivateRoute path="/home">
           <Home />
         </PrivateRoute>
-        <Route path="/strainsearch">
+        <Route path="/strain-search">
           <StrainSearch />
         </Route>
       </Switch>
