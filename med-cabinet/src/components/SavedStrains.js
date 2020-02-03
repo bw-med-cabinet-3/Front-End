@@ -3,7 +3,8 @@ import React from "react";
 import { connect } from 'react-redux';
 // Actions
 
-const Saved = () => {
+
+const SavedStrains = () => {
     return (
         <div>
             <h2>This is saved strains</h2>
@@ -12,4 +13,4 @@ const Saved = () => {
 }
 
 
-export default Saved;
+export default SavedStrains;
