@@ -1,4 +1,7 @@
+// React
 import React from "react";
+import { connect } from 'react-redux';
+// Actions
 
 const Saved = () => {
     return (
@@ -7,4 +10,6 @@ const Saved = () => {
         </div>
     )
 }
+
+
 export default Saved;
