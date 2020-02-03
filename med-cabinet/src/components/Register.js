@@ -39,7 +39,7 @@ const Register = () => {
 
   return (
     <div>
-      <form onSubmit={login}>
+      <form onSubmit={register}>
         <input
           type="text"
           name="first_name"
