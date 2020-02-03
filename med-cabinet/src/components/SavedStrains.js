@@ -1,10 +1,10 @@
 import React from "react";
 
-const Saved = () => {
+const SavedStrains = () => {
     return (
         <div>
             <h2>This is saved strains</h2>
         </div>
     )
 }
-export default Saved;
+export default SavedStrains;

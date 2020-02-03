@@ -4,7 +4,9 @@ import React, { useState } from 'react';
 
 const Home = () => {
   return (
-    <div>Home Component</div>
+    <div>
+      <h1>This is the home</h1>
+    </div>
   );
 };
 

@@ -7,4 +7,4 @@ const StrainSearch = () => {
         </div>
     )
 }
-export default Container;
+export default StrainSearch;
