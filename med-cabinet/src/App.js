@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router, Route, Switch, PrivateRoute} from "react-router-dom";
+import PrivateRoute from "./components/PrivateRoute";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./components/Home";
 import StrainSearch from "./components/StrainSearch";
 
