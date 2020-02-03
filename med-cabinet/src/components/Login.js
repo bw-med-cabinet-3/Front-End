@@ -8,7 +8,7 @@ import { axiosWithAuth } from '../utils/axiosWithAuth';
 const Login = () => {
   // Set initial state for credentials, fetch check and error
   const [credentials, setCredentials] = useState({
-    username: '',
+    email: '',
     password: ''
   });
   const [isFetching, setIsFetching] = useState(false);
@@ -20,7 +20,7 @@ const Login = () => {
     console.log("NEW credentials from Login", credentials);
   };
 
-  // Post credentials to local storage
+  // POST credentials to local storage
   let history = useHistory();
   const login = e => {
     e.preventDefault();
@@ -47,9 +47,9 @@ const Login = () => {
       <form onSubmit={login}>
         <input
           type="text"
-          name="username"
-          placeholder="Username"
-          value={credentials.username}
+          name="email"
+          placeholder="Email"
+          value={credentials.email}
           onChange={handleChanges}
           required
         />
@@ -62,6 +62,7 @@ const Login = () => {
           required
         />
       </form>
+      <button>Log in</button>
       <p>{isFetching ? 'Loading...' : null}</p>
       <p>{error ? error : null}</p>
     </div>
