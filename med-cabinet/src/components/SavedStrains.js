@@ -1,6 +1,7 @@
 // React
 import React from "react";
 import { connect } from 'react-redux';
+import Nav from "./Nav";
 // Actions
 import { getStrains } from '../actions';
 
@@ -10,6 +11,7 @@ const SavedStrains = props => {
 
     return (
         <div>
+            <Nav />
             <h2>This is saved strains</h2>
             <button onClick={props.getStrains}>Load Strains</button>
             {props.error && <p>{props.error}</p>}
