@@ -33,7 +33,7 @@ const Register = () => {
       .post('/users/register', credentials)
       .then(res => {
         console.log(res.data);
-        history.push('/login');    // CHECK THIS TO MAKE SURE IT'S RIGHT ONCE ENDPOINTS ARE SET
+        history.push('/login');
       })
       .catch(err => console.log(err));
   };
