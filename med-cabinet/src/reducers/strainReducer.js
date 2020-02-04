@@ -21,6 +21,7 @@ export function strainReducer(state=initialState, action) {
         isFetching: true
       };
     case FETCH_STRAINS_SUCCESS:
+      console.log(state);
       return {
         ...state,
         error: '',
