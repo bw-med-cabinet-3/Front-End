@@ -18,9 +18,9 @@ function App() {
         <PrivateRoute path="/home">
           <Home />
         </PrivateRoute>
-        {/* <Route path="/login">
+        <Route path="/login">
           <Login />
-        </Route> */}
+        </Route>
         <Route path="/register">
           <Register />
         </Route>

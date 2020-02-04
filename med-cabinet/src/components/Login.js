@@ -29,12 +29,12 @@ const Login = () => {
     setIsFetching(true);
 
     axiosWithAuth()
-      .post('/login', credentials)    // REPLACE THIS WITH LOGIN ENDPOINT
+      .post('/users/login', credentials)
       .then(res => {
         console.log(res);
         if (res.data.token) {
           localStorage.setItem('token', res.data.token);
-          history.push('/');   // REPLACE THIS WITH HOME COMPONENT
+          history.push('/home');
         } else {
           // setError(res.data.msg);    CHECK THIS
           setError('Your login was unsuccessful!');
