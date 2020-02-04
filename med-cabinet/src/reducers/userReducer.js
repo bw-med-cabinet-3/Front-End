@@ -1,34 +1,33 @@
-// Command name imports
 import {
-  FETCH_STRAINS_START,
-  FETCH_STRAINS_SUCCESS,
-  FETCH_STRAINS_FAILURE
+  FETCH_USER_START,
+  FETCH_USER_SUCCESS,
+  FETCH_USER_FAILURE
 } from '../actions';
 // Initial state setup
 const initialState = {
-  strains: [],
+  user: [],
   error: '',
   isFetching: false
 };
 
 
-export function strainReducer(state=initialState, action) {
+export function userReducer(state=initialState, action) {
   switch (action.type) {
-    case FETCH_STRAINS_START:
+    case FETCH_USER_START:
       return {
         ...state,
         error: '',
         isFetching: true
       };
-    case FETCH_STRAINS_SUCCESS:
+    case FETCH_USER_SUCCESS:
       console.log(state);
       return {
         ...state,
         error: '',
         isFetching: false,
-        strains: action.payload
+        user: action.payload
       };
-    case FETCH_STRAINS_FAILURE:
+    case FETCH_USER_FAILURE:
       return {
         ...state,
         error: action.payload,
