@@ -1,16 +1,30 @@
 import React from "react";
+import styled from "styled-components";
 
 const Card = () => {
+
+    const Box = styled.div`
+        display: flex;
+        flex-flow: column nowrap;
+        border: 1px solid green;
+        width: 30%;
+        h2 {
+            margin: 0 auto;
+        }
+        p {
+            margin: 0 auto;
+        }
+    `;
     return (
-        <div>
-            <h1>Strain:</h1>
-            <h2>Type:</h2>
-            <h2>Rating:</h2>
-            <h2>Effects:</h2>
-            <h2>Flavors:</h2>
-            <h2>Symptoms:</h2>
+        <Box>
+            <h2>Strain:</h2>
+            <p>Type:</p>
+            <p>Rating:</p>
+            <p>Effects:</p>
+            <p>Flavors:</p>
+            <p>Symptoms:</p>
             <p>Description:</p>
-        </div>
+        </Box>
     )
 }
 export default Card;
