@@ -12,12 +12,13 @@ import { rootReducer } from './reducers';
 import App from './App';
 // Styling
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // Other
 import * as serviceWorker from './serviceWorker';
 
 
 const store = createStore(rootReducer, applyMiddleware(thunk, logger));
-console.log(store);
+console.log(store.getState());
 
 ReactDOM.render(
   <Provider store={store}>
