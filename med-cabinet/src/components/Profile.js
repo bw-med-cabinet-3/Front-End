@@ -19,6 +19,7 @@ export default function Profile() {
         <div>
         <Nav />
         <h2>ProfilePage</h2>
+        <ProfileCard />
         </div>
-    )
+    );
 }
