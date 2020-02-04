@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
-// import { axiosWithAuth } from "../utils/axiosWithAuth";
 import axios from "axios";
 import Card from "./Card";
 import Search from "./Search";
@@ -13,6 +12,7 @@ const StrainSearch = () => {
         axios.get(``)
         .then(res => {
             console.log(res);
+            setStrains(res.data);
         })
         .catch(err => {
             console.log("There's an error", err);
