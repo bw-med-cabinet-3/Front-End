@@ -25,7 +25,9 @@ const StrainSearch = () => {
         <Nav />
         <Search />
         <h2>this is the page for listing strains and searching them</h2>
+        <section>
         <Card />
+        </section>
         </div>
     )
 }
