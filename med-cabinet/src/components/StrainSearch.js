@@ -3,6 +3,7 @@ import Nav from "./Nav";
 // import { axiosWithAuth } from "../utils/axiosWithAuth";
 import axios from "axios";
 import Card from "./Card";
+import Search from "./Search";
 
 const StrainSearch = () => {
 
@@ -22,6 +23,7 @@ const StrainSearch = () => {
     return (
         <div>
         <Nav />
+        <Search />
         <h2>this is the page for listing strains and searching them</h2>
         </div>
     )
