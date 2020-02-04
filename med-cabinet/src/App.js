@@ -3,6 +3,7 @@ import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 // Components
 import PrivateRoute from "./components/PrivateRoute";
+import LandingPage from "./components/LandingPage";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Register from "./components/Register";
@@ -15,9 +16,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <PrivateRoute path="/home">
-          <Home />
-        </PrivateRoute>
+        <PrivateRoute path="/home" component={Home} />
         <Route path="/login">
           <Login />
         </Route>
@@ -31,7 +30,7 @@ function App() {
           <SavedStrains />
         </Route>
         <Route exact path="/">
-          <Login />
+          <LandingPage />
         </Route>
       </Switch>
     </Router>
