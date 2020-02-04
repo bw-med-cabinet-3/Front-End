@@ -8,6 +8,7 @@ export default function Nav () {
             <Link to="/home">Home</Link>
             <Link to="/strain-search">Strain Search</Link>
             <Link to="/saved-strains">Saved Strains</Link>
+            <Link to="/profile">Profile</Link>
         </nav>
         </header>
     )
