@@ -7,6 +7,7 @@ const Card = () => {
         display: flex;
         flex-flow: column wrap;
         border: 1px solid green;
+        border-radius: 3%;
         width: 30%;
         margin-left: 10%;
         h2 {
