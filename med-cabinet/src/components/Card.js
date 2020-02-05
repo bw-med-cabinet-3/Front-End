@@ -26,12 +26,12 @@ const Card = (props) => {
     return (
         <Box>
             <h2>Strain: {props.strain_name}</h2>
-            <p>Type:</p>
-            <p>Rating:</p>
-            <p>Effects:</p>
-            <p>Flavors:</p>
+            <p>Type: {props.strain_type}</p>
+            <p>Rating: {props.strain_rating}</p>
+            <p>Effects: </p>
+            <p>Flavors: </p>
             <p>Symptoms:</p>
-            <p>Description:</p>
+            <p>Description: {props.strain_description}</p>
         </Box>
     )
 }

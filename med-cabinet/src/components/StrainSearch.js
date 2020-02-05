@@ -18,6 +18,8 @@ const StrainSearch = () => {
     `;
 
     const [strains, setStrains] = useState([]);
+    // const [filteredStrains, setFilteredStrains] = useState([]);
+
     console.log(strains);
 
     useEffect(() =>{
@@ -39,7 +41,15 @@ const StrainSearch = () => {
                 <Search />
             </SearchDiv>
             <section>
-                <Card />
+            {strains.map(props => (
+                <Card
+                  key={props.strain_id}
+                  name={props.strain_name}
+                  type={props.strain_type}
+                  rating={props.strain_rating}
+                  description={props.strain_description}
+                />
+                   ))}
             </section>
         </div>
     )
