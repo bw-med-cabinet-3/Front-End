@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
 
   //Styling
+  //comment
 
   const PageWrap = styled.div`
     width: 100%;
