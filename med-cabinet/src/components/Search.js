@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import styled from "styled-components";
 
-const Search = () => {
+const Search = (props) => {
 
     const Button = styled.button`
         background: white;
@@ -24,7 +24,15 @@ const Search = () => {
 
     const submitHandler = e => {
         e.preventDefault();
+
+        // const strainSearch = props.data.filter(strains => {
+        //     return strains.name.toLowerCase().includes(results.toLowerCase());
+        //   });
+        //   props.search(strainSearch);
+        //   console.log(strainSearch);
+        // };
     }
+
 
     return (
         <div>

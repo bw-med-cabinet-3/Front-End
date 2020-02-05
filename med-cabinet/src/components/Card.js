@@ -33,12 +33,11 @@ console.log(props);
     return (
         <Wrapper>
         <Box>
-            <h2>Strain: {props.strain_name}</h2>
+            <h2>Strain: {props.name}</h2>
             <p>Type: {props.type}</p>
             <p>Rating: {props.rating}</p>
-            <p>Effects: </p>
-            <p>Flavors: </p>
-            <p>Symptoms:</p>
+            <ul>Effects:{props.effects}</ul>
+            <ul>Flavors: {props.flavors}</ul>
             <p>Description: {props.description}</p>
         </Box>
         </Wrapper>
