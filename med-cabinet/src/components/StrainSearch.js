@@ -6,7 +6,14 @@ import Card from "./Card";
 import Search from "./Search";
 import styled from "styled-components";
 
-const StrainSearch = (props) => {
+const StrainSearch = () => {
+
+    const CardSection = styled.div`
+        width:100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    `;
 
     const SearchDiv = styled.div`
         display: flex;
@@ -22,9 +29,9 @@ const StrainSearch = (props) => {
 
     console.log(strains);
 
-    // const search = strains => {
-    //     setFilteredStrains(strains)
-    // }
+    const search = nameArr => {
+        setFilteredStrains(nameArr)
+    }
 
     useEffect(() =>{
         axiosWithAuth().get(`/strains`)
@@ -43,10 +50,9 @@ const StrainSearch = (props) => {
         <div>
             <Nav />
             <SearchDiv>
-                <Search //search={search} strains={strains}
-                />
+                <Search search={search} strains={strains}/>
             </SearchDiv>
-            <section>
+            <CardSection>
             {strains.map(props => (
                 <Card
                   key={props.strain_id}
@@ -60,10 +66,9 @@ const StrainSearch = (props) => {
                   flavors={props.strain_flavors.map(flavor => 
                     <li>{props.strain_flavors}</li>
                   )}
-
                 />
                    ))}
-            </section>
+            </CardSection>
         </div>
     )
 }

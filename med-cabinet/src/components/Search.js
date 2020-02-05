@@ -25,13 +25,12 @@ const Search = (props) => {
     const submitHandler = e => {
         e.preventDefault();
 
-        // const strainSearch = props.data.filter(strains => {
-        //     return strains.name.toLowerCase().includes(results.toLowerCase());
-        //   });
-        //   props.search(strainSearch);
-        //   console.log(strainSearch);
-        // };
-    }
+        const strainSearch = props.results.filter(nameArr => {
+            return nameArr.name.toLowerCase().includes(results.toLowerCase());
+          });
+          props.search(strainSearch);
+          console.log(strainSearch);
+        };
 
 
     return (
@@ -41,10 +40,10 @@ const Search = (props) => {
                 onChange={handleChanges}
                 type="text"
                 name="search"
-                placeholder="Search a Strain"/>
+                placeholder="Search a Strain by Name"/>
                 <Button type="submit">Results</Button>
             </form>
         </div>
     )
-}
+    }
 export default Search;
