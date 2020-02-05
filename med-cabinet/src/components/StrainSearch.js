@@ -14,7 +14,6 @@ import styled from "styled-components";
 
 
 const StrainSearch = props => {
-    console.log(props);
 
     const Title = styled.div`
         width: 100%;
@@ -62,7 +61,7 @@ const StrainSearch = props => {
                 <h1>Strains</h1>
             </Title>
             <SearchDiv>
-                <Search search={search} strains={props.strains}/>
+                <Search strains={props.strains}/>
             </SearchDiv>
             <CardSection>
             {props.strains.map(props => (
