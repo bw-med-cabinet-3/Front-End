@@ -6,8 +6,8 @@ import Star from "./img/star.png"
 
 const Card = (props) => {
 
-// console.log(props);
 
+    
     const Box = styled.div`
 
         box-shadow: 0 4px 8px 0 rgba( 0, 0, 0, 0.2), 0 6px 20px 0 rgba( 0, 0, 0, 0.19);
@@ -30,6 +30,9 @@ const Card = (props) => {
             padding-right: 4%;
         }
         h3 {
+            margin: 0 auto;
+        }
+        ul {
             margin: 0 auto;
         }
     `;
@@ -56,8 +59,8 @@ const Card = (props) => {
                 <h4>{props.rating}</h4>
                 <img src={Star} alt="icon for rating"/>
             </Rate>
-            <p>Effects:{props.effects}</p>
-            <p>Flavors: {props.flavors}</p>
+            <ul>Effects:{props.effects}</ul>
+            <ul>Flavors: {props.flavors}</ul>
             <p>Description: {props.description}</p>
         </Box>
     )

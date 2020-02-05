@@ -74,10 +74,10 @@ const StrainSearch = () => {
                   rating={props.strain_rating}
                   description={props.strain_description}
                   effects={props.strain_effects.map(effect => 
-                        <li>{props.strain_effects}</li>
+                        <li>{effect}</li>
                   )}
                   flavors={props.strain_flavors.map(flavor => 
-                    <li>{props.strain_flavors}</li>
+                    <li>{flavor}</li>
                   )}
                 />
                    ))}
