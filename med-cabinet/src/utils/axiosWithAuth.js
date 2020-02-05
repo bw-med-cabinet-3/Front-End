@@ -11,7 +11,8 @@ export const axiosWithAuth = () => {
     baseURL: 'https://med-cabinet-web25.herokuapp.com/api',
     headers: {
       authorization: token,
-      email: email
+      email: email,
+      password: password
     }
   });
 };
