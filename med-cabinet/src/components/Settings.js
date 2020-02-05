@@ -8,8 +8,21 @@ const Settings = props => {
   console.log(props);
 
   return (
-    <div>Settings!!!</div>
+    <div>
+      <p>First name: </p>
+      <p>Last name: </p>
+      <p>Email: </p>
+    </div>
   );
 };
 
-export default Settings;
+const mapStateToProps = state => ({
+  user: state.userReducer.user,
+  error: state.userReducer.error,
+  isFetching: state.userReducer.isFetching
+})
+
+export default connect(
+  mapStateToProps,
+  { getUser }
+)(Settings);

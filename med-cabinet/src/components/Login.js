@@ -33,7 +33,9 @@ const Login = () => {
       .then(res => {
         console.log(res);
         if (res.data.token) {
+          // Set items to local storage
           localStorage.setItem('token', res.data.token);
+          localStorage.setItem('email', res.data.user.email);
           history.push('/home');
         } else {
           // setError(res.data.msg);    CHECK THIS
