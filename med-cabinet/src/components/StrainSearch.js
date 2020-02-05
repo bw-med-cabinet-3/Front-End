@@ -23,7 +23,7 @@ const StrainSearch = () => {
         justify-content: center;
         width: 30%;
         margin: 0 auto;
-        margin-top: 3%;
+        margin-top: 7%;
         margin-bottom: 8%;
     `;
 

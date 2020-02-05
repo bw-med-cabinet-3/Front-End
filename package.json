@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-query": "^0.3.24"
+  }
+}

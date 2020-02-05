@@ -25,9 +25,9 @@ const Search = (props) => {
     const submitHandler = e => {
         e.preventDefault();
 
-        const strainSearch = props.results.filter(nameArr => {
-            return nameArr.name.toLowerCase().includes(results.toLowerCase());
-          });
+        const strainSearch = (strains, index) => {
+                return strains.filter(result => result.toLowerCase().indexOf(query.toLowerCase()) !== -1)
+          };
           props.search(strainSearch);
           console.log(strainSearch);
         };

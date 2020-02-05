@@ -11,6 +11,7 @@ export default function Nav () {
         :hover {
             color: #00cc00;
             transition: all 0.3s ease;
+            text-decoration: none;
         }
     `;
     const NavWrap = styled.div`
