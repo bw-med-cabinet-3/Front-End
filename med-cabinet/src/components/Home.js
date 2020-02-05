@@ -47,9 +47,8 @@ const Home = () => {
     height: 200px;
     border: 1px solid green;
     background: white;
-    :hover {
-      background: rgb(59,161,76);
-      background: radial-gradient(circle, rgba(59,161,76,0.835171568627451) 0%, rgba(105,215,123,1) 49%, rgba(21,164,65,1) 100%, rgba(25,156,62,0.4066001400560224) 100%);
+    :hover {      
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
   `;
 
@@ -59,8 +58,7 @@ const Home = () => {
   border: 1px solid green;
   background: white;
   :hover {
-    background: rgb(59,161,76);
-    background: radial-gradient(circle, rgba(59,161,76,0.835171568627451) 0%, rgba(105,215,123,1) 49%, rgba(21,164,65,1) 100%, rgba(25,156,62,0.4066001400560224) 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   `;
 
@@ -70,8 +68,7 @@ const Home = () => {
   border: 1px solid green;
   background: white;
   :hover {
-    background: rgb(59,161,76);
-    background: radial-gradient(circle, rgba(59,161,76,0.835171568627451) 0%, rgba(105,215,123,1) 49%, rgba(21,164,65,1) 100%, rgba(25,156,62,0.4066001400560224) 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   `;
 
