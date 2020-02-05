@@ -61,7 +61,7 @@ const StrainSearch = props => {
                 <h1>Strains</h1>
             </Title>
             <SearchDiv>
-                <Search strains={props.strains}/>
+                <Search />
             </SearchDiv>
             <CardSection>
             {props.strains.map(props => (
