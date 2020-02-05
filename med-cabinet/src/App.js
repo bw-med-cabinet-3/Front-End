@@ -10,6 +10,8 @@ import Register from "./components/Register";
 import StrainSearch from "./components/StrainSearch";
 import SavedStrains from "./components/SavedStrains";
 import Profile from "./components/Profile";
+import Settings from "./components/Settings";
+import ChangeEmail from "./components/ChangeEmail";
 // Styling
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -31,11 +33,17 @@ function App() {
         <Route path="/saved-strains">
           <SavedStrains />
         </Route>
-        <Route exact path="/">
-          <LandingPage />
-        </Route>
         <Route path="/profile">
           <Profile />
+        </Route>
+        <Route path="/settings">
+          <Settings />
+        </Route>
+        <Route path="/change-email">
+          <ChangeEmail />
+        </Route>
+        <Route exact path="/">
+          <LandingPage />
         </Route>
       </Switch>
     </Router>
