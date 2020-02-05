@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Card = () => {
+const Card = (props) => {
 
     const Box = styled.div`
 
@@ -25,7 +25,7 @@ const Card = () => {
     `;
     return (
         <Box>
-            <h2>Strain:</h2>
+            <h2>Strain: {props.strain_name}</h2>
             <p>Type:</p>
             <p>Rating:</p>
             <p>Effects:</p>
