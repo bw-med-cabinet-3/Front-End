@@ -40,7 +40,7 @@ const StrainSearch = props => {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-`;
+    `;
 
     // const [strains, setStrains] = useState([]);
     const [filteredStrains, setFilteredStrains] = useState([]);
