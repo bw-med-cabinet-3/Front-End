@@ -5,16 +5,6 @@ import Nav from "./Nav";
 
 export default function Profile() {
 
-    useEffect(() => {
-    axios.get(``)
-    .then(res => {
-        console.log(res);
-    })
-    .catch(err => {
-        console.log("There's an error fetching user data", err)
-    });
-}, []);
-
     return (
         <div>
         <Nav />

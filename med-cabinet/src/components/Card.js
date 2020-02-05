@@ -5,14 +5,17 @@ const Card = () => {
 
     const Box = styled.div`
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
         border: 1px solid green;
         width: 30%;
+        margin-left: 10%;
         h2 {
             margin: 0 auto;
+            margin-bottom: 5%;
         }
         p {
             margin: 0 auto;
+            margin-bottom: 4%;
         }
     `;
     return (
