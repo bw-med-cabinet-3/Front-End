@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Nav from "./Nav";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -20,7 +21,7 @@ const Home = () => {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 5.75%;
   `;
 
@@ -77,21 +78,30 @@ const Home = () => {
 
   return (
     <PageWrap>
+
       <Nav />
+
       <Title>
         <h1>Welcome, Username</h1>
         <h2>How can we assist you?</h2>
       </Title>
+
       <CardWraps>
       
         <Card1>
-          <Button>Help Me Find My Perfect Strain</Button>
+          <Link to="/strain-search">
+            <Button>Help Me Find My Perfect Strain</Button>
+          </Link>
         </Card1>
         <Card2>
+        <Link to="/saved-strains">
           <Button2>Take Me To My Saved Strains</Button2>
+        </Link>
         </Card2>
         <Card3>
+        <Link to="/profile">
           <Button3>Take Me To My Profile</Button3>
+        </Link>
         </Card3>
       
       </CardWraps>
