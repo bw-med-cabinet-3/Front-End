@@ -13,7 +13,7 @@ const StrainSearch = () => {
         h1 {
             display:flex;
             justify-content: center;
-            margin-top:50px;
+            margin-top:7%;
             color: green;
         }
     `;  

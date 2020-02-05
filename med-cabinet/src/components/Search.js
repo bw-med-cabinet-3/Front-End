@@ -3,13 +3,9 @@ import styled from "styled-components";
 
 const Search = (props) => {
 
-    const Wrap = styled.div`
-        border: 1px solid black;
-
-    `;
-
     const Button = styled.button`
         background: white;
+        color: green;
         border: 1px solid green;
         border-radius: 8%;
         margin-top: 8%;
@@ -17,8 +13,11 @@ const Search = (props) => {
         padding-left: 25px;
         padding-right: 25px;
         :hover {
-            background-color: #00b33c;
-            transition: all 0.5s ease;
+            color: green;
+            text-decoration: none;
+            border-radius: 7%;
+            box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+            transition: all 0.3s ease;
         }
     `;
 
@@ -41,7 +40,7 @@ const Search = (props) => {
 
 
     return (
-        <Wrap>
+        <div>
             <form onSubmit={submitHandler}>
                 <input
                 onChange={handleChanges}
@@ -50,7 +49,7 @@ const Search = (props) => {
                 placeholder="Search a Strain by Name"/>
             </form>
             <Button type="submit">Results</Button>
-        </Wrap>
+        </div>
     )
     }
 export default Search;
