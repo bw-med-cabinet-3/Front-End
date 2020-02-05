@@ -32,13 +32,13 @@ const Search = (props) => {
     const [results, setResults] = useState();
 
     useEffect((props) => {
-        if(props){
+        // if(props){
             props.getStrains();
             console.log(props);
             //     const strainSearch = props.strains.filter(item =>
             //     item.name.toLowerCase().includes(results.toLowerCase()));
             // setResults(strainSearch);
-        }
+        // }
     }, [results]);
 
     
