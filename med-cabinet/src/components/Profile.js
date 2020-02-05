@@ -22,8 +22,11 @@ export default function Profile() {
         margin 0 auto;
         margin-top: 5%;
         :hover {
-            background-color: #00b33c;
-            transition: all 0.5s ease;
+            color: green;
+            text-decoration: none;
+            border-radius: 7%;
+            box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+            transition: all 0.3s ease;
         }
     `;
     const ButtonWrap = styled.div`
