@@ -1,5 +1,11 @@
+// React
 import React, { useState, useEffect } from "react";
+import { connect } from 'react-redux';
+// Actions
+import { getStrains } from '../actions';
+// Styling
 import styled from "styled-components";
+
 
 const Search = (props) => {
 
@@ -51,6 +57,17 @@ const Search = (props) => {
             </form>
             <Button type="submit">Results</Button>
         </div>
-    )
-    }
-export default Search;
+    );
+};
+
+const mapStateToProps = state => ({
+    strains: state.strainReducer.strains,
+    error: state.strainReducer.error,
+    isFetching: state.strainReducer.isFetching
+});
+
+
+export default connect(
+    mapStateToProps,
+    { getStrains }
+)(Search);
