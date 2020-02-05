@@ -86,6 +86,18 @@ const Card = (props) => {
             margin-bottom: 3%;
         }
     `;
+    const Button = styled.button`
+    width: 350px;
+    height: 200px;
+    border: 1px solid green;
+    background: white;
+    :hover {      
+      box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+      color: green;
+      border-radius: 4%;
+      transition: all 0.3s ease;
+    }
+    `;
 
     return (
     //     <Flippy
@@ -138,6 +150,9 @@ const Card = (props) => {
                     <h3>Description:</h3>
                     <p>{props.description}</p>
                     </Desc>
+                    
+                <Button type="submit">Save Strain</Button>
+
             </Box>
     )
 }

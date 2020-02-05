@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Nav from "./Nav";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Typist from 'react-typist';
 
 const Home = () => {
 
@@ -88,11 +89,12 @@ const Home = () => {
     <PageWrap>
 
       <Nav />
-
-      <Title>
-        <h1>{localStorage.message}</h1>
-        <h2>How can we assist you?</h2>
-      </Title>
+      <Typist>
+        <Title>
+          <h1>{localStorage.message}</h1>
+          <h2>How can we assist you?</h2>
+        </Title>
+      </Typist>
 
       <CardWraps>
       

@@ -40,7 +40,7 @@ const StrainSearch = props => {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-`;
+    `;
 
     // const [strains, setStrains] = useState([]);
     const [filteredStrains, setFilteredStrains] = useState([]);
@@ -52,6 +52,11 @@ const StrainSearch = props => {
     useEffect(() => {
         props.getStrains();
     }, []);
+
+    function paginate(array, page_size, page_number) {
+        // human-readable page numbers usually start with 1, so we reduce 1 in the first argument
+        return array.slice((page_number - 1) * page_size, page_number * page_size);
+      }
 
 
     return (
