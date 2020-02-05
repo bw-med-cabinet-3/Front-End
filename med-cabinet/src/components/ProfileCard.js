@@ -7,15 +7,18 @@ export default function ProfileCard () {
 
     display: flex;
     flex-flow: column nowrap;
-    width: 50%;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 10%;
     border: 1px solid green;
     h2 {
-        margin: 0 auto;s
+        margin: 0 auto;
+        margin-bottom: 5%;
     }
     p {
         margin: 0 auto;
+        margin-bottom: 2%;
     }
-
     `;
 
     return (

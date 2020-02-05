@@ -5,13 +5,14 @@ import styled from "styled-components";
 export default function Nav () {
 
     const StyledLink = styled(Link)`
-        border: 1px solid black;
         color: green;
+        margin: 5%;
+        margin-left: 12%;
     `;
     const NavWrap = styled.div`
-        border: 1px solid blue;
-        width: 15%;
+        width: 50%;
         margin: 0 auto;
+        margin-top: 2%;
     `;
     return (
         <header>
