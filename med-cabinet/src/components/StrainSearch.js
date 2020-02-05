@@ -10,7 +10,6 @@ const StrainSearch = () => {
     const SearchDiv = styled.div`
         display: flex;
         justify-content: center;
-        border: 1px solid black;
         width: 30%;
         margin: 0 auto;
         margin-top: 3%;
