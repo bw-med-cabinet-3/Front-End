@@ -2,10 +2,11 @@ import React from "react";
 import styled from "styled-components";
 //Icon Import
 import Star from "./img/star.png"
+//Import Flippy
+import Flippy, { FrontSide, BackSide } from 'react-flippy';
 
 
 const Card = (props) => {
-
 
     
     const Box = styled.div`
@@ -51,18 +52,19 @@ const Card = (props) => {
     `;
 
     return (
-        <Box>
-            <h2>Strain: {props.name}</h2>
-            <p>Type: {props.type}</p>
-            <h3>Rating:</h3>
-            <Rate> 
-                <h4>{props.rating}</h4>
-                <img src={Star} alt="icon for rating"/>
-            </Rate>
-            <ul>Effects:{props.effects}</ul>
-            <ul>Flavors: {props.flavors}</ul>
-            <p>Description: {props.description}</p>
-        </Box>
+
+            <Box>
+                <h2>Strain: {props.name}</h2>
+                <p>Type: {props.type}</p>
+                <h3>Rating:</h3>
+                <Rate> 
+                    <h4>{props.rating}</h4>
+                    <img src={Star} alt="icon for rating"/>
+                </Rate>
+                <ul>Effects:{props.effects}</ul>
+                <ul>Flavors: {props.flavors}</ul>
+                <p>Description: {props.description}</p>
+            </Box>
     )
 }
 export default Card;
