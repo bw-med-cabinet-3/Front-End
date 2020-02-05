@@ -6,7 +6,7 @@ import Star from "./img/star.png"
 
 const Card = (props) => {
 
-console.log(props);
+// console.log(props);
 
     const Box = styled.div`
 

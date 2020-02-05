@@ -18,7 +18,7 @@ const ChangeEmail = () => {
   const handleSubmit = e => {
     e.preventDefault();
     axiosWithAuth()
-      .put(`/users/:${userID}/email`, newEmail)
+      .put(`/users/${userID}/email`, newEmail)
       .then(res => {
         console.log(res);
         history.push('/settings');
