@@ -11,7 +11,7 @@ const Search = () => {
         padding-left: 25px;
         padding-right: 25px;
         :hover {
-            background-color: #CCFFBB;
+            background-color: #00b33c;
             transition: all 0.5s ease;
         }
     `;

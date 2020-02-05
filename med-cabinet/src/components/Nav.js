@@ -8,6 +8,10 @@ export default function Nav () {
         color: green;
         margin: 5%;
         margin-left: 12%;
+        :hover {
+            color: #00cc00;
+            transition: all 0.3s ease;
+        }
     `;
     const NavWrap = styled.div`
         width: 50%;

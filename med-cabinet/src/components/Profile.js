@@ -22,7 +22,7 @@ export default function Profile() {
         margin 0 auto;
         margin-top: 5%;
         :hover {
-            background-color: #CCFFBB;
+            background-color: #00b33c;
             transition: all 0.5s ease;
         }
     `;
