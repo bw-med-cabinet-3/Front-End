@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
-import axios from "axios";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 import Card from "./Card";
 import Search from "./Search";
@@ -8,12 +7,16 @@ import styled from "styled-components";
 
 const StrainSearch = () => {
 
-    const CardSection = styled.div`
-        width:100%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-    `;
+    const Title = styled.div`
+        width: 100%;
+        height: 50px;
+        h1 {
+            display:flex;
+            justify-content: center;
+            margin-top:50px;
+            color: green;
+        }
+    `;  
 
     const SearchDiv = styled.div`
         display: flex;
@@ -23,6 +26,13 @@ const StrainSearch = () => {
         margin-top: 3%;
         margin-bottom: 8%;
     `;
+
+    const CardSection = styled.div`
+    width:100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+`;
 
     const [strains, setStrains] = useState([]);
     const [filteredStrains, setFilteredStrains] = useState([]);
@@ -49,6 +59,9 @@ const StrainSearch = () => {
     return (
         <div>
             <Nav />
+            <Title>
+                <h1>Strains</h1>
+            </Title>
             <SearchDiv>
                 <Search search={search} strains={strains}/>
             </SearchDiv>
