@@ -5,6 +5,12 @@ import styled from "styled-components";
 
 export default function Profile() {
 
+    const Wrap = styled.div`
+        h2 {
+            text-align: center;
+            margin-top: 5%;
+        }
+    `;
     const Button = styled.button`
         background: white;
         color: green;
@@ -25,13 +31,13 @@ export default function Profile() {
     `;
 
     return (
-        <div>
+        <Wrap>
         <Nav />
-        <h2>ProfilePage</h2>
+        <h2>Profile Page</h2>
         <ProfileCard />
         <ButtonWrap>
         <Button>Settings</Button>
         </ButtonWrap>
-        </div>
+        </Wrap>
     );
 }
