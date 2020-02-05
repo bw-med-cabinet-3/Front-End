@@ -1,11 +1,13 @@
 // React
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import styled from "styled-components";
 
 
 const LandingPage = () => {
   let history = useHistory();
   
+  //Button Paths
   const toLogin = () => {
     history.push('/login');
   }
@@ -14,10 +16,12 @@ const LandingPage = () => {
     history.push('/register');
   }
 
+  //
+
   return (
     <div>
-      <button onClick={toLogin}>Log in</button>
-      <button onClick={toRegister}>Register</button>
+      <Login onClick={toLogin}>Log in</Login>
+      <Register onClick={toRegister}>Register</Register>
     </div>
   );
 };
