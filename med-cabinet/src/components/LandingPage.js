@@ -16,13 +16,28 @@ const LandingPage = () => {
     history.push('/register');
   }
 
-  //
+  //styling
+  const ButtonWrap = styled.div`
+    border: 1px solid black;
+    width: 50%;
+    height: 300px;
+    display:flex;
+    flex-flow: row nowrap;
+  `;
+  const Login = styled.button`
+    width: 50%;
+    background: white;
+  `;
+  const Register = styled.button`
+    width: 50%;
+    background: white;
+  `;
 
   return (
-    <div>
+    <ButtonWrap>
       <Login onClick={toLogin}>Log in</Login>
       <Register onClick={toRegister}>Register</Register>
-    </div>
+    </ButtonWrap>
   );
 };
 
