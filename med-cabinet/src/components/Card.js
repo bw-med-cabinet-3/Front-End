@@ -57,10 +57,34 @@ const Card = (props) => {
 
     const Effects = styled.div`
         margin: 0 auto;
+        h3 {
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+        ul {
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
     `;
 
     const Flavors = styled.div`
         margin: 0 auto;
+        h3 {
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        ul {
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+    `;
+    const Desc = styled.div`
+        margin-top: 4%;
+        h3 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3%;
+        }
     `;
 
     return (
@@ -110,7 +134,10 @@ const Card = (props) => {
                 <h3>Flavors:</h3>
                     <ul>{props.flavors}</ul>                
                 </Flavors>
-                <p>Description: {props.description}</p>
+                <Desc>
+                    <h3>Description:</h3>
+                    <p>{props.description}</p>
+                    </Desc>
             </Box>
     )
 }
