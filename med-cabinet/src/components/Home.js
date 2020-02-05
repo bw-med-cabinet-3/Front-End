@@ -77,7 +77,7 @@ const Home = () => {
     :hover {
       box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
       color: green;
-      boder-radius: 4%;
+      border-radius: 4%;
       transition: all 0.3s ease;
     }
   `;
