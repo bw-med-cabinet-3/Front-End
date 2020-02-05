@@ -21,6 +21,7 @@ const ChangeEmail = () => {
       .put(`/users/${userID}/email`, newEmail)
       .then(res => {
         console.log(res);
+        localStorage.setItem('email', newEmail.email)
         history.push('/settings');
       })
   }
