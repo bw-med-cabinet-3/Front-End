@@ -1,11 +1,20 @@
+// React
 import React, { useEffect, useState } from "react";
-import Nav from "./Nav";
+import { connect } from 'react-redux';
+// Axios
 import { axiosWithAuth } from "../utils/axiosWithAuth";
+// Actions
+import { getStrains } from '../actions';
+// Components
+import Nav from "./Nav";
 import Card from "./Card";
 import Search from "./Search";
+// Styling
 import styled from "styled-components";
 
-const StrainSearch = () => {
+
+const StrainSearch = props => {
+    console.log(props);
 
     const Title = styled.div`
         width: 100%;
@@ -34,25 +43,15 @@ const StrainSearch = () => {
     justify-content: space-evenly;
 `;
 
-    const [strains, setStrains] = useState([]);
+    // const [strains, setStrains] = useState([]);
     const [filteredStrains, setFilteredStrains] = useState([]);
-
-    console.log(strains);
 
     const search = nameArr => {
         setFilteredStrains(nameArr)
     }
 
-    useEffect(() =>{
-        axiosWithAuth().get(`/strains`)
-        .then(res => {
-            console.log(res);
-            setStrains(res.data);
-            setFilteredStrains(res.data)
-        })
-        .catch(err => {
-            console.log("There's an error", err);
-        });
+    useEffect(() => {
+        props.getStrains();
     }, []);
 
 
@@ -63,10 +62,10 @@ const StrainSearch = () => {
                 <h1>Strains</h1>
             </Title>
             <SearchDiv>
-                <Search search={search} strains={strains}/>
+                <Search search={search} strains={props.strains}/>
             </SearchDiv>
             <CardSection>
-            {strains.map(props => (
+            {props.strains.map(props => (
                 <Card
                   key={props.strain_id}
                   name={props.strain_name}
@@ -83,6 +82,17 @@ const StrainSearch = () => {
                    ))}
             </CardSection>
         </div>
-    )
-}
-export default StrainSearch;
+    );
+};
+
+const mapStateToProps = state => ({
+    strains: state.strainReducer.strains,
+    error: state.strainReducer.error,
+    isFetching: state.strainReducer.isFetching
+});
+
+
+export default connect(
+    mapStateToProps,
+    { getStrains }
+)(StrainSearch);
