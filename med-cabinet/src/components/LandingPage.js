@@ -17,11 +17,16 @@ const LandingPage = () => {
   }
 
   //styling
+  const Page = styled.div`
+    width:100%;
+  `;
+
   const ButtonWrap = styled.div`
-    border: 1px solid black;
     width: 50%;
     height: 300px;
     display:flex;
+    margin: 0 auto;
+    margin-top: 15%;
     flex-flow: row nowrap;
   `;
   const Login = styled.button`
@@ -31,13 +36,16 @@ const LandingPage = () => {
   const Register = styled.button`
     width: 50%;
     background: white;
+    border: 1px solid green;
   `;
 
   return (
-    <ButtonWrap>
-      <Login onClick={toLogin}>Log in</Login>
-      <Register onClick={toRegister}>Register</Register>
-    </ButtonWrap>
+    <Page>
+      <ButtonWrap>
+        <Login onClick={toLogin}>Log in</Login>
+        <Register onClick={toRegister}>Register</Register>
+      </ButtonWrap>
+    </Page>
   );
 };
 
