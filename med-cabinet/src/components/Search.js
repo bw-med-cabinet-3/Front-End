@@ -25,12 +25,13 @@ const Search = (props) => {
     const submitHandler = e => {
         e.preventDefault();
 
-        const strainSearch = (strains, index) => {
-                return strains.filter(result => result.toLowerCase().indexOf(query.toLowerCase()) !== -1)
-          };
-          props.search(strainSearch);
-          console.log(strainSearch);
-        };
+        // const strainSearch = (strains, index) => {
+        //         return strains.filter(result => result.toLowerCase().indexOf(query.toLowerCase()) !== -1)
+        //   };
+        //   props.search(strainSearch);
+        //   console.log(strainSearch);
+        // };
+    }
 
 
     return (
