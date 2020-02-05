@@ -1,6 +1,20 @@
 import React, {useState} from "react";
+import styled from "styled-components";
 
 const Search = () => {
+
+    const Button = styled.button`
+        background: white;
+        border: 1px solid green;
+        border-radius: 8%;
+        margin-left: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+        :hover {
+            background-color: #00b33c;
+            transition: all 0.5s ease;
+        }
+    `;
 
     const [results, setResults] = useState();
 
@@ -20,6 +34,7 @@ const Search = () => {
                 type="text"
                 name="search"
                 placeholder="Search a Strain"/>
+                <Button type="submit">Results</Button>
             </form>
         </div>
     )

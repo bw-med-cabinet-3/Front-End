@@ -9,8 +9,10 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import StrainSearch from "./components/StrainSearch";
 import SavedStrains from "./components/SavedStrains";
+import Profile from "./components/Profile";
 // Styling
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -31,6 +33,9 @@ function App() {
         </Route>
         <Route exact path="/">
           <LandingPage />
+        </Route>
+        <Route path="/profile">
+          <Profile />
         </Route>
       </Switch>
     </Router>

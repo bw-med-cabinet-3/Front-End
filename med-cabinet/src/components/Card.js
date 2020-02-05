@@ -4,15 +4,23 @@ import styled from "styled-components";
 const Card = () => {
 
     const Box = styled.div`
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
         border: 1px solid green;
+        border-radius: 3%;
         width: 30%;
+        margin-left: 10%;
         h2 {
             margin: 0 auto;
+            margin-bottom: 5%;
+            margin-top: 3%;
         }
         p {
             margin: 0 auto;
+            margin-bottom: 4%;
         }
     `;
     return (

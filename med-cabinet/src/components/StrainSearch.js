@@ -3,8 +3,18 @@ import Nav from "./Nav";
 import axios from "axios";
 import Card from "./Card";
 import Search from "./Search";
+import styled from "styled-components";
 
 const StrainSearch = () => {
+
+    const SearchDiv = styled.div`
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 3%;
+        margin-bottom: 8%;
+    `;
 
     const [strains, setStrains] = useState([]);
 
@@ -22,12 +32,13 @@ const StrainSearch = () => {
 
     return (
         <div>
-        <Nav />
-        <Search />
-        <h2>this is the page for listing strains and searching them</h2>
-        <section>
-        <Card />
-        </section>
+            <Nav />
+            <SearchDiv>
+                <Search />
+            </SearchDiv>
+            <section>
+                <Card />
+            </section>
         </div>
     )
 }

@@ -1,25 +1,43 @@
 import React, { useEffect } from "react";
 import ProfileCard from "./ProfileCard";
-import axios from "axios";
 import Nav from "./Nav";
+import styled from "styled-components";
 
 export default function Profile() {
 
-    useEffect(() => {
-    axios.get(``)
-    .then(res => {
-        console.log(res);
-    })
-    .catch(err => {
-        console.log("There's an error fetching user data", err)
-    });
-}, []);
+    const Wrap = styled.div`
+        h2 {
+            text-align: center;
+            margin-top: 5%;
+        }
+    `;
+    const Button = styled.button`
+        background: white;
+        color: green;
+        border: 1px solid green;
+        border-radius: 8%;
+        padding-left: 25px;
+        padding-right: 25px;
+        display: flex;
+        margin 0 auto;
+        margin-top: 5%;
+        :hover {
+            background-color: #00b33c;
+            transition: all 0.5s ease;
+        }
+    `;
+    const ButtonWrap = styled.div`
+
+    `;
 
     return (
-        <div>
+        <Wrap>
         <Nav />
-        <h2>ProfilePage</h2>
+        <h2>Profile Page</h2>
         <ProfileCard />
-        </div>
+        <ButtonWrap>
+        <Button>Settings</Button>
+        </ButtonWrap>
+        </Wrap>
     );
 }
