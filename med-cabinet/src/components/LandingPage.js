@@ -33,7 +33,7 @@ const LandingPage = () => {
   const Login = styled.button`
     width: 30%;
     background: white;
-    border: 1px solid green;
+    border: 1px solid #47d147;
     border-radius: 5%;
     :hover {
       box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
@@ -45,7 +45,7 @@ const LandingPage = () => {
   const Register = styled.button`
     width: 30%;
     background: white;
-    border: 1px solid green;
+    border: 1px solid #47d147;
     border-radius: 5%;
     :hover {
       box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
