@@ -13,6 +13,7 @@ const Card = () => {
         h2 {
             margin: 0 auto;
             margin-bottom: 5%;
+            margin-top: 3%;
         }
         p {
             margin: 0 auto;

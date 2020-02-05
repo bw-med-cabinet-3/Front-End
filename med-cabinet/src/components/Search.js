@@ -10,7 +10,10 @@ const Search = () => {
         margin-left: 20px;
         padding-left: 25px;
         padding-right: 25px;
-
+        :hover {
+            background-color: #CCFFBB;
+            transition: all 0.5s ease;
+        }
     `;
 
     const [results, setResults] = useState();
