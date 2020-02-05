@@ -88,7 +88,7 @@ const Home = () => {
       <Nav />
 
       <Title>
-        <h1>Welcome, Username</h1>
+        <h1>{localStorage.message}</h1>
         <h2>How can we assist you?</h2>
       </Title>
 
