@@ -64,9 +64,10 @@ const StrainSearch = props => {
                 <Search />
             </SearchDiv>
             <CardSection>
-            {props.strains.map(props => (
+            {props.strains.map((props, i) => (
                 <Card
-                  key={props.strain_id}
+                  key={i}
+                  strain-id={props.strain_id}
                   name={props.strain_name}
                   type={props.strain_type}
                   rating={props.strain_rating}

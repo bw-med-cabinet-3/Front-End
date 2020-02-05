@@ -31,16 +31,29 @@ const Search = (props) => {
 
     const [results, setResults] = useState();
 
-    // useEffect((props) => {
+    useEffect((props) => {
+        if(props){
+            props.getStrains();
+            console.log(props);
+            //     const strainSearch = props.strains.filter(item =>
+            //     item.name.toLowerCase().includes(results.toLowerCase()));
+            // setResults(strainSearch);
+        }
+    }, [results]);
 
-    //         const strainSearch = props.strains.filter(item =>
-    //         item.name.toLowerCase().includes(results.toLowerCase()));
-    //     setResults(strainSearch);
-    //   }, [results]);
     
     const handleChanges = e => {
+
         setResults(e.target.value);
-    };
+
+        const strainSearch = props.strains.filter(item => {
+
+            item.strain_name.toLowerCase().includes(results.toLowerCase())
+            return setResults;
+    });
+        setResults(strainSearch);
+        console.log(strainSearch);
+        }
 
     const submitHandler = e => {
         e.preventDefault();
@@ -53,6 +66,7 @@ const Search = (props) => {
                 onChange={handleChanges}
                 type="text"
                 name="search"
+                value={results}
                 placeholder="Search a Strain by Name"/>
             </form>
             <Button type="submit">Results</Button>
