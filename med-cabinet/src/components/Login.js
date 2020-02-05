@@ -36,6 +36,7 @@ const Login = () => {
           // Set items to local storage
           localStorage.setItem('token', res.data.token);
           localStorage.setItem('email', res.data.user.email);
+          localStorage.setItem('password', credentials.password)
           history.push('/home');
         } else {
           // setError(res.data.msg);    CHECK THIS

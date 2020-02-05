@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
 import axios from "axios";
+import { axiosWithAuth } from "../utils/axiosWithAuth";
 import Card from "./Card";
 import Search from "./Search";
 import styled from "styled-components";
@@ -17,9 +18,10 @@ const StrainSearch = () => {
     `;
 
     const [strains, setStrains] = useState([]);
+    console.log(strains);
 
     useEffect(() =>{
-        axios.get(``)
+        axiosWithAuth().get(`/strains`)
         .then(res => {
             console.log(res);
             setStrains(res.data);
