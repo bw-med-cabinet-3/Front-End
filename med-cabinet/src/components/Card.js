@@ -3,6 +3,13 @@ import styled from "styled-components";
 
 const Card = (props) => {
 
+console.log(props);
+
+    const Wrapper = styled.div`
+        width:100%;
+        margin-bottom: 5%;
+    `;
+
     const Box = styled.div`
 
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -24,15 +31,18 @@ const Card = (props) => {
         }
     `;
     return (
+        <Wrapper>
         <Box>
             <h2>Strain: {props.strain_name}</h2>
-            <p>Type: {props.strain_type}</p>
-            <p>Rating: {props.strain_rating}</p>
+            <p>Type: {props.type}</p>
+            <p>Rating: {props.rating}</p>
             <p>Effects: </p>
             <p>Flavors: </p>
             <p>Symptoms:</p>
-            <p>Description: {props.strain_description}</p>
+            <p>Description: {props.description}</p>
         </Box>
+        </Wrapper>
+
     )
 }
 export default Card;
