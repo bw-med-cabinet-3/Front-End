@@ -38,6 +38,7 @@ const Login = () => {
           localStorage.setItem('email', res.data.user.email);
           localStorage.setItem('password', credentials.password);
           localStorage.setItem('id', res.data.user.user_id);
+          localStorage.setItem('message', res.data.message);
           history.push('/home');
         } else {
           // setError(res.data.msg);    CHECK THIS
