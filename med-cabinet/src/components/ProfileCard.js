@@ -7,7 +7,6 @@ export default function ProfileCard () {
 
         box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
 
-
         display: flex;
         flex-flow: column nowrap;
         width: 30%;
@@ -18,6 +17,7 @@ export default function ProfileCard () {
             margin: 0 auto;
             margin-bottom: 5%;
             margin-top: 3%;
+            color: green;
         }
         p {
             margin: 0 auto;
