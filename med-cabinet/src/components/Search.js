@@ -1,7 +1,9 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const Search = (props) => {
+
+    console.log(props);
 
     const Button = styled.button`
         background: white;
@@ -23,20 +25,20 @@ const Search = (props) => {
 
     const [results, setResults] = useState();
 
+    // useEffect((props) => {
+
+    //         const strainSearch = props.strains.filter(item =>
+    //         item.name.toLowerCase().includes(results.toLowerCase()));
+    //     setResults(strainSearch);
+    //   }, [results]);
+    
     const handleChanges = e => {
         setResults(e.target.value);
     };
 
     const submitHandler = e => {
         e.preventDefault();
-
-        const strainSearch = (strains, index) => {
-                return strains.filter(result => result.toLowerCase().includes(result.toLowerCase()));
-          };
-          props.search(strainSearch);
-          console.log(strainSearch);
-        };
-
+    };
 
     return (
         <div>
