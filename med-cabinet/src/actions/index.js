@@ -1,5 +1,4 @@
 // Axios
-import axios from 'axios';
 import { axiosWithAuth } from '../utils/axiosWithAuth';
 // Destructuring command names
 // GET strains data
@@ -12,16 +11,15 @@ export const FETCH_USER_SUCCESS = "FETCH_USER_SUCCESS";
 export const FETCH_USER_FAILURE = "FETCH_USER_FAILURE";
 
 
-// ----- CURRENTLY SET UP WITH MOCK DATA -----
 // GET an array of strain data
 export const getStrains = () => {
   return dispatch => {
     dispatch({ type: FETCH_STRAINS_START });
-    axios()
-      .get("https://xivapi.com/freecompany/9229142273877456802?data=FCM")
+    axiosWithAuth()
+      .get("/strains")
       .then(res => {
         console.log(res.data);
-        dispatch({ type: FETCH_STRAINS_SUCCESS, payload: res.data.FreeCompanyMembers });
+        dispatch({ type: FETCH_STRAINS_SUCCESS, payload: res.data });
       })
       .catch(err => {
         console.log(err);
