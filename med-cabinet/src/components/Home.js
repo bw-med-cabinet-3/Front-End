@@ -51,6 +51,9 @@ const Home = () => {
     :hover {      
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       color: green;
+      background: rgb(12,102,7);
+      background: linear-gradient(0deg, rgba(12,102,7,0.6951155462184874) 0%, rgba(30,116,39,0) 45%);
+      transition: all 0.3s ease;
     }
   `;
 
@@ -62,6 +65,9 @@ const Home = () => {
   :hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: green;
+    background: rgb(12,102,7);
+    background: linear-gradient(0deg, rgba(12,102,7,0.6951155462184874) 0%, rgba(30,116,39,0) 45%);
+    transition: all 0.3s ease;
   }
   `;
 
@@ -73,6 +79,9 @@ const Home = () => {
   :hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: green;
+    background: rgb(12,102,7);
+    background: linear-gradient(0deg, rgba(12,102,7,0.6951155462184874) 0%, rgba(30,116,39,0) 45%);
+    transition: all 0.3s ease;
   }
   `;
 
