@@ -1,10 +1,12 @@
 // React
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Nav from "./Nav";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+
+  //Styling
 
   const PageWrap = styled.div`
     width: 100%;
