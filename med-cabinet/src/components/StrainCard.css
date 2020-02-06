@@ -2,12 +2,34 @@ body, ul {
     margin: 0;
     padding: 0;
 }
-.wrap {
-    width: 100%;
-    border: 1px solid blue;
-}
 .bigBox {
-    display:flex;
     border: 1px solid black;
-    width: 25%;
+    display:flex;
+    flex-flow: row wrap;
+    width: 33%;
+    justify-content: center;
+}
+.title {
+    font-size: 2rem;
+    color: green;
+}
+.card button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
+    color:green;
+    height: 60px;
+    margin-top: 2%;
+    background: none;
+    border: 1px solid green;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+}
+.card button:hover {
+    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+    border:none;
+    background: rgb(161,255,188);
+    background: radial-gradient(circle, rgba(161,255,188,0.8463760504201681) 0%, rgba(190,255,206,0) 61%);
+    color: forestgreen
 }

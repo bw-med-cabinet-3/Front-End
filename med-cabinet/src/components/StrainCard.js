@@ -135,17 +135,15 @@ const StrainCard = (props) => {
             //     <Button type="submit">Save Strain</Button>
 
             // </Box>
-            <div className="wrap">
+            // <div className="wrap">
             <div className="bigBox">
                 <div className="card" key={props.strain_id}>
-                    <div className="cardBox">
                         <div className="title">Strain: {props.name}
                         </div>
-                        <button className="detailsButton"><Link to="/strain-details">Strain Details</Link></button>
+                        <button className="detailsButton"><Link to="/strain-details" style={{ textDecoration: 'none', color: 'green' }}>Strain Details</Link></button>
                     </div>
-                </div>
             </div>
-        </div>
+
     )
 }
 export default StrainCard;
