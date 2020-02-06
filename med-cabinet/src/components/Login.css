@@ -4,13 +4,12 @@ body, ul {
 }
 .page {
     width: 100%;
-    height: 150vh;
+    height: 100vh;
     background: rgb(57,195,97);
     background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
 }
 .login {
     width: 30%;
-
     position: relative;
     top: -50%;
     margin: 0 auto;
