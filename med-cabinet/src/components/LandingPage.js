@@ -37,18 +37,21 @@ const LandingPage = () => {
   `;
 
   const ButtonWrap = styled.div`
-    width: 70%;
+    position: relative;
+    top: 30%;
+    width: 100%;
     background: none;
-    height: 200px;
-    display:flex;
-    justify-content: space-evenly;
-    padding-top: 3%;
+    height: 100px;
+    padding-top: 1%;
     margin: 0 auto;
     zIndex: 2;
     flex-flow: row nowrap;
   `;
   const Login = styled.button`
-    width: 30%;
+    width: 25%;
+    height: 60px;
+    margin-left: 16%;
+    margin-top: 6.75%;
     background: white;
     border: 1px solid #47d147;
     border-radius: 5%;
@@ -57,11 +60,14 @@ const LandingPage = () => {
       box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
       border:none;
       background: rgb(118,255,158);
-      background: radial-gradient(circle, rgba(118,255,158,1) 0%, rgba(255,255,255,1) 100%);
+      background: radial-gradient(circle, rgba(118,255,158,1) 0%, rgba(190,255,206,1) 100%);
     }
   `;
   const Register = styled.button`
-    width: 30%;
+    width: 25%;
+    height: 60px;
+    margin-left: 16%;
+    margin-top: 6.75%;
     background: white;
     border: 1px solid #47d147;
     border-radius: 5%;
@@ -70,7 +76,7 @@ const LandingPage = () => {
       box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
       border:none;
       background: rgb(118,255,158);
-      background: radial-gradient(circle, rgba(118,255,158,1) 0%, rgba(255,255,255,1) 100%);
+      background: radial-gradient(circle, rgba(118,255,158,1) 0%, rgba(190,255,206,1) 100%);
     }
   `;
 
