@@ -10,13 +10,13 @@ body, ul {
 }
 .login {
     width: 30%;
+
+    position: relative;
+    top: -50%;
     margin: 0 auto;
     z-Index: 2;
-    margin-top: -10%;
-    border: 1px solid blue;
 }
 .login-cont {
-    border: 1px solid black;
     margin: 0 auto;
     width: 50%;
     z-Index: 2;
@@ -37,7 +37,6 @@ body, ul {
     text-align: center;
 }
 .page .bgWrap {
-    border: 1px solid black;
     z-Index: -1;
     height: 150vh;
 
