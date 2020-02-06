@@ -33,6 +33,21 @@ body, ul {
     text-align: center;
     margin-bottom: 12%;
 }
+.Card Button {
+
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    color:green;
+    height: 60px;
+    margin-left: 16%;
+    margin-top: 12%;
+    background: none;
+    border: 1px solid green;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+
+}
 .bgWrap {
     z-Index: -1;
     height: 150vh;
