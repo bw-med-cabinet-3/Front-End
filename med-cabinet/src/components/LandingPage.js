@@ -89,7 +89,7 @@ const LandingPage = () => {
     <div className="Page">
     <div className="Buttons">
       <button className="Login" onClick={toLogin}>Log in</button>
-      <button className="Register" onClick={toRegister}>Register</button>
+      <button className="Rbutton" onClick={toRegister}>Register</button>
     </div>
     <Particles 
     params={ particleOpt }
