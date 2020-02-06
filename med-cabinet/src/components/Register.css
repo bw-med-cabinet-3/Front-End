@@ -5,7 +5,8 @@ body, ul {
 .Page {
     width: 100%;
     z-Index: -1;
-    height: 100vh;
+    height: 105vh;
+    overflow:hidden;
     background: rgb(57,195,97);
     background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
 }

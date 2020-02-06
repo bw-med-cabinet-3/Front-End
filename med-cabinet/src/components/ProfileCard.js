@@ -26,13 +26,13 @@ export default function ProfileCard (localStorage) {
 
     return (
         <Pcard>
-            <h2>User: {localStorage.first_name} {localStorage.last_name}</h2>
+            <h2>User: {localStorage.firstName} {localStorage.lastName}</h2>
             <h4>First Name:</h4>
-            <p>{localStorage.first_name}</p>
+            <p>{localStorage.firstMame}</p>
             <h4>Last Name:</h4>
-            <p>{localStorage.last_name}</p>
+            <p>{localStorage.lastName}</p>
             <h4>Email:</h4>
-            <p> {localStorage.email}</p>
+            <p>{localStorage.email}</p>
         </Pcard>
     );
 }
