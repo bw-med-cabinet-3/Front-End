@@ -14,13 +14,26 @@ export default function Profile() {
     "interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":462.88401101176675,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},
     "retina_detect":true};
 
+    // const StyledLink = styled(Link)`
+    //     color: green;
+    //     width: 10%;
+    //     padding-top: 10px;
+    //     :hover {
+    //         color: green;
+    //         text-decoration: none;
+    //         border-radius: 7%;
+    //         box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+    //         transition: all 0.3s ease;
+    //     }
+    // `;
+
     const Wrap = styled.div`
         h2 {
             text-align: center;
             margin-top: 5%;
         }
     `;
-    const Button = styled.button`
+    const StyledLink = styled(Link)`
         background: white;
         color: green;
         border: 1px solid green;
@@ -41,6 +54,9 @@ export default function Profile() {
             text-decoration: none;
         }
     `;
+    const Settings = styled.div`
+        display:flex;
+    `;
 
     return (
         <div className="wrapPro">
@@ -57,9 +73,9 @@ export default function Profile() {
             <div className="proCard">
             <ProfileCard />
             </div>
-            <div className="settings">
-            <Button>Settings</Button>
-            </div>
+            <Settings>
+            <StyledLink to="/settings">Settings</StyledLink>            
+            </Settings>
         </div>
     );
 }
