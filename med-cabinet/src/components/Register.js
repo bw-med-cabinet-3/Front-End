@@ -83,7 +83,7 @@ const Register = () => {
       <div className="Register">
         <div className="Card">
           <h2>Register:</h2>
-          <Form onSubmit={register}>
+          <Form onSubmit={register} inline style={{flexWrap: "column"}}>
             <FormGroup>
               <Input
                 type="text"
