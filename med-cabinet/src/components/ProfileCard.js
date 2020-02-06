@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function ProfileCard () {
+export default function ProfileCard (localStorage) {
 
     const Pcard =styled.div`
 
@@ -19,7 +19,7 @@ export default function ProfileCard () {
             margin-top: 3%;
             color: green;
         }
-        p {
+        h4 {
             margin: 0 auto;
             margin-bottom: 2%;
         }
@@ -27,10 +27,13 @@ export default function ProfileCard () {
 
     return (
         <Pcard>
-            <h2>User:</h2>
-            <p>First Name:</p>
-            <p>Last Name:</p>
-            <p>Email:</p>
+            <h2>User: {localStorage.message}</h2>
+            <h4>First Name:</h4>
+            <p>{localStorage.first_name}</p>
+            <h4>Last Name:</h4>
+            <p>{localStorage.last_name}</p>
+            <h4>Email:</h4>
+            <p> {localStorage.email}</p>
         </Pcard>
     );
 }
