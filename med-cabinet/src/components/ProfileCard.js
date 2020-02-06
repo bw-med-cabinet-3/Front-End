@@ -9,7 +9,7 @@ export default function ProfileCard (localStorage) {
 
         display: flex;
         flex-flow: column nowrap;
-        width: 30%;
+        width: 100%;
         margin: 0 auto;
         margin-top: 10%;
         border: 1px solid green;
