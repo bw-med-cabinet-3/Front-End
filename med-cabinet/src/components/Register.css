@@ -54,6 +54,10 @@ body, ul {
     background: radial-gradient(circle, rgba(161,255,188,0.8463760504201681) 0%, rgba(190,255,206,0) 61%);
     color: forestgreen
 }
+.Card p {
+    text-align: center;
+    margin-top: 5%;
+}
 .bgWrap {
     z-Index: -1;
     height: 150vh;

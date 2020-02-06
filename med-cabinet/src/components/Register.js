@@ -7,7 +7,6 @@ import { axiosWithAuth } from '../utils/axiosWithAuth';
 import { Button, Form, FormGroup, Input } from 'reactstrap';
 //Import Particles-JS
 import Particles from 'react-particles-js';
-import styled from "styled-components";
 import "./Register.css";
 
 
@@ -21,32 +20,32 @@ const Register = () => {
     "position": "absolute"
   }
 
-  const Page = styled.div`
-  width:100%;
-  height: 100vh;
-  background: rgb(57,195,97);
-  background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
-  zIndex: 2;
-  `;
-  const Register = styled.div`
-    display: flex;
-    width: 20%;
-    margin-left: 42%;
-    margin-top: 0%;
-  `;
-  const Card = styled.div`
-    display: flex;
-    flex-flow: column nowrap;
-    margin: 0 auto;
-    h2 {
-      margin: 0 auto;
-      margin-bottom: 4%;
-    }
-    button {
-      display:flex;
-      margin: 0 auto;
-    }
-  `;
+  // const Page = styled.div`
+  // width:100%;
+  // height: 100vh;
+  // background: rgb(57,195,97);
+  // background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
+  // zIndex: 2;
+  // `;
+  // const Register = styled.div`
+  //   display: flex;
+  //   width: 20%;
+  //   margin-left: 42%;
+  //   margin-top: 0%;
+  // `;
+  // const Card = styled.div`
+  //   display: flex;
+  //   flex-flow: column nowrap;
+  //   margin: 0 auto;
+  //   h2 {
+  //     margin: 0 auto;
+  //     margin-bottom: 4%;
+  //   }
+  //   button {
+  //     display:flex;
+  //     margin: 0 auto;
+  //   }
+  // `;
   // Set initial state for credentials, fetch check and error
   const [credentials, setCredentials] = useState({
     first_name: '',
