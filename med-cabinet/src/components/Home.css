@@ -19,6 +19,7 @@ body, ul {
     position: absolute;
     top:10%;
     left: 41%;
+    color: green;
 }
 .cardDiv {
     display: flex;
