@@ -1,5 +1,5 @@
 // React
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from 'react-redux';
 import Nav from "./Nav";
 // Actions
@@ -9,11 +9,15 @@ const SavedStrains = props => {
     console.log(props);
     console.log(props.savedStrains);
 
+    useEffect(() => {
+        props.getSavedStrains();
+    }, [])
+
+
     return (
         <div>
             <Nav />
             <h2>This is saved strains</h2>
-            <button onClick={props.getSavedStrains}>Load Strains</button>
             {props.error && <p>{props.error}</p>}
             {props.isFetching && <p>Loading...</p>}
             {props.savedStrains && props.savedStrains.map(item => (
