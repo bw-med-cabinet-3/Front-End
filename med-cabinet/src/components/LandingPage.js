@@ -31,7 +31,7 @@ const LandingPage = () => {
   //styling
   const Page = styled.div`
     width:100%;
-    height: 100vh;
+    height: 120vh;
     background: rgb(80,181,110);
     background: radial-gradient(circle, rgba(80,181,110,1) 0%, rgba(160,255,163,1) 100%)
   `;
@@ -40,8 +40,8 @@ const LandingPage = () => {
     position: relative;
     top: 30%;
     width: 100%;
+    height: 0.5px;
     background: none;
-    height: 100px;
     padding-top: 1%;
     margin: 0 auto;
     zIndex: 2;
@@ -51,7 +51,7 @@ const LandingPage = () => {
     width: 25%;
     height: 60px;
     margin-left: 16%;
-    margin-top: 6.75%;
+    margin-top: 12%;
     background: none;
     border: 1px solid green;
     border-radius: 5%;
@@ -59,15 +59,15 @@ const LandingPage = () => {
     :hover {
       box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
       border:none;
-      background: rgb(118,255,158);
-      background: radial-gradient(circle, rgba(118,255,158,1) 0%, rgba(190,255,206,1) 100%);
+      background: rgb(161,255,188);
+      background: radial-gradient(circle, rgba(161,255,188,0.8463760504201681) 0%, rgba(190,255,206,0) 61%);
     }
   `;
   const Register = styled.button`
     width: 25%;
     height: 60px;
     margin-left: 16%;
-    margin-top: 6.75%;
+    margin-top: 12%;
     background: none;
     border: 1px solid green;
     border-radius: 5%;
@@ -75,8 +75,8 @@ const LandingPage = () => {
     :hover {
       box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
       border:none;
-      background: rgb(118,255,158);
-      background: radial-gradient(circle, rgba(118,255,158,1) 0%, rgba(190,255,206,1) 100%);
+      background: rgb(161,255,188);
+      background: radial-gradient(circle, rgba(161,255,188,0.8463760504201681) 0%, rgba(190,255,206,0) 61%);
     }
   `;
 
