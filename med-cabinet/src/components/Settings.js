@@ -3,7 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
 // Actions
-import { getUser } from '../actions';
+// import { getUser } from '../actions';
 // Styling
 import styled from "styled-components";
 
@@ -71,13 +71,15 @@ const Settings = props => {
   );
 };
 
-const mapStateToProps = state => ({
-  user: state.userReducer.user,
-  error: state.userReducer.error,
-  isFetching: state.userReducer.isFetching
-})
+// const mapStateToProps = state => ({
+//   user: state.userReducer.user,
+//   error: state.userReducer.error,
+//   isFetching: state.userReducer.isFetching
+// })
 
-export default connect(
-  mapStateToProps,
-  { getUser }
-)(Settings);
+// export default connect(
+//   mapStateToProps,
+//   { getUser }
+// )(Settings);
+
+export default Settings;

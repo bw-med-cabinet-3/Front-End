@@ -1,7 +1,7 @@
 import {
-  FETCH_USER_START,
-  FETCH_USER_SUCCESS,
-  FETCH_USER_FAILURE
+  SEARCH_STRAINS_START,
+  SEARCH_STRAINS_SUCCESS,
+  SEARCH_STRAINS_FAILURE
 } from '../actions';
 // Initial state setup
 const initialState = {
@@ -13,13 +13,13 @@ const initialState = {
 
 export function userReducer(state=initialState, action) {
   switch (action.type) {
-    case FETCH_USER_START:
+    case SEARCH_STRAINS_START:
       return {
         ...state,
         error: '',
         isFetching: true
       };
-    case FETCH_USER_SUCCESS:
+    case SEARCH_STRAINS_SUCCESS:
       console.log(state);
       return {
         ...state,
@@ -27,7 +27,7 @@ export function userReducer(state=initialState, action) {
         isFetching: false,
         user: action.payload
       };
-    case FETCH_USER_FAILURE:
+    case SEARCH_STRAINS_FAILURE:
       return {
         ...state,
         error: action.payload,

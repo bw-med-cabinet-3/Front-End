@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import { strainReducer } from './strainReducer';
-import { userReducer } from './userReducer';
+// import { searchReducer } from './searchReducer';
 
 export const rootReducer = combineReducers({
   strainReducer,
-  userReducer
+  // searchReducer
 });
