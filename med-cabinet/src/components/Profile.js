@@ -34,12 +34,14 @@ export default function Profile() {
         }
     `;
     const StyledLink = styled(Link)`
-        background: white;
+        background: none;
         color: green;
         border: 1px solid green;
         border-radius: 8%;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         display: flex;
         margin 0 auto;
         margin-top: 5%;
@@ -57,7 +59,10 @@ export default function Profile() {
     const Settings = styled.div`
         display:flex;
         position: relative;
-        bottom:50%;
+        bottom:45%;
+        right: 6.5%;
+        width: 1%;
+        margin: 0 auto;
     `;
     const ProCard = styled.div`
         position: absolute;
@@ -65,7 +70,6 @@ export default function Profile() {
         top: 25%;
         left: 37.5%;
         width: 25%;
-        border: 1px solid blue;
     `;
 
     return (
