@@ -22,12 +22,29 @@ const Register = () => {
 
   const Page = styled.div`
   width:100%;
-  height: 150vh;
+  height: 100vh;
   background: rgb(57,195,97);
   background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
+  zIndex: 2;
   `;
   const Register = styled.div`
-    border: 1px solid black;
+    display: flex;
+    width: 20%;
+    margin-left: 42%;
+    margin-top: 0%;
+  `;
+  const Card = styled.div`
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    h2 {
+      margin: 0 auto;
+      margin-bottom: 4%;
+    }
+    button {
+      display:flex;
+      margin: 0 auto;
+    }
   `;
   // Set initial state for credentials, fetch check and error
   const [credentials, setCredentials] = useState({
@@ -63,8 +80,8 @@ const Register = () => {
   return (
     <Page>
     <Register>
-      <div>
-        <h1>OH LOOK IT'S A REGISTER</h1>
+      <Card>
+        <h2>Register:</h2>
         <Form onSubmit={register}>
           <FormGroup>
             <Input
@@ -110,7 +127,7 @@ const Register = () => {
         </Form>
         <p>{isFetching ? 'Loading...' : null}</p>
         <p>{error ? error : null}</p>
-      </div>
+      </Card>
     </Register>
     <Particles 
     params={ particleOpt }
