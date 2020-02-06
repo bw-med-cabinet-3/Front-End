@@ -7,7 +7,7 @@ import { axiosWithAuth } from "../utils/axiosWithAuth";
 import { getStrains } from '../actions';
 // Components
 import Nav from "./Nav";
-import Card from "./Card";
+import StrainCard from "./StrainCard";
 import Search from "./Search";
 // Styling
 import styled from "styled-components";
@@ -91,28 +91,28 @@ const StrainSearch = props => {
                 value={query}
                 placeholder="Search a Strain by Name"/>
             </form>
-            {data.map((item, i) => (
+            {/* {data.map((item, i) => (
                 <p key={i}>{item.strain_name}</p>
-            ))}
-            {/* </SearchDiv>
+            ))} */}
+            {/* </SearchDiv> */}
             <CardSection>
-            {props.strains.map((props, i) => (
-                <Card
+            {data.map((props, i) => (
+                <StrainCard
                   key={i}
                   strain-id={props.strain_id}
                   name={props.strain_name}
                   type={props.strain_type}
                   rating={props.strain_rating}
                   description={props.strain_description}
-                  effects={props.strain_effects.map(effect => 
-                        <li>{effect}</li>
+                  effects={props.strain_effects.map((effect, i) => 
+                        <li key={i}>{effect}</li>
                   )}
-                  flavors={props.strain_flavors.map(flavor => 
-                    <li>{flavor}</li>
+                  flavors={props.strain_flavors.map((flavor, i) => 
+                    <li key={i}>{flavor}</li>
                   )}
                 />
                    ))}
-            </CardSection> */}
+            </CardSection>
         </div>
     );
 };
