@@ -43,7 +43,10 @@ h2 {
 .card h2 {
     padding: 50px;
 }
-
+.card h4 {
+    margin: 0 auto;
+    margin-bottom: 15%;
+}
 .card .img {
     display: flex;
     margin: 0 auto;
@@ -52,4 +55,7 @@ h2 {
 .img h3 {
     margin-right: 20%;
     margin-top: 10%;
+}
+.card button {
+    margin-bottom: 20%;
 }
