@@ -31,15 +31,25 @@ const Search = (props) => {
 
     const [results, setResults] = useState();
 
-    useEffect((props) => {
-        // if(props){
-            props.getStrains();
-            console.log(props);
-            //     const strainSearch = props.strains.filter(item =>
-            //     item.name.toLowerCase().includes(results.toLowerCase()));
-            // setResults(strainSearch);
-        // }
-    }, [results]);
+    // useEffect((props) => {
+    //     async function waitForContent() {
+    //         await props.getStrains();
+    //     };
+
+    //     waitForContent();
+
+    //     console.log(props);
+
+
+
+    //     // if(props){
+    //     //     props.getStrains();
+    //     //     console.log(props);
+    //     //         const strainSearch = props.strains.filter(item =>
+    //     //         item.name.toLowerCase().includes(results.toLowerCase()));
+    //     //     setResults(strainSearch);
+    //     // }
+    // }, []);
 
     
     const handleChanges = e => {
