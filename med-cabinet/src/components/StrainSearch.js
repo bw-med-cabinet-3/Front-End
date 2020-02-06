@@ -1,5 +1,6 @@
 // React
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 // Axios
 import { axiosWithAuth } from "../utils/axiosWithAuth";
@@ -14,7 +15,7 @@ import "./StrainSearch.css";
 
 
 const StrainSearch = props => {
-
+    console.log(props.strains)
     // const Title = styled.div`
     //     width: 100%;
     //     height: 50px;
@@ -97,15 +98,18 @@ const StrainSearch = props => {
             <div className="cardBox">
             {data.map((props, i) => (
                 <StrainCard
+                    // strains={props.strains}
                   key={i}
-                  strain-id={props.strain_id}
+                  strain_id={props.strain_id}
                   name={props.strain_name}
                   type={props.strain_type}
                   rating={props.strain_rating}
                   description={props.strain_description}
+                  strain_effects={props.strain_effects}
                   effects={props.strain_effects.map((effect, i) => 
                         <li key={i}>{effect}</li>
                   )}
+                  strain_flavors={props.strain_flavors}
                   flavors={props.strain_flavors.map((flavor, i) => 
                     <li key={i}>{flavor}</li>
                   )}

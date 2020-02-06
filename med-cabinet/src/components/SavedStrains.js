@@ -3,34 +3,34 @@ import React from "react";
 import { connect } from 'react-redux';
 import Nav from "./Nav";
 // Actions
-import { getStrains } from '../actions';
+import { getSavedStrains } from '../actions';
 
 const SavedStrains = props => {
     console.log(props);
-    console.log(props.strains);
+    console.log(props.savedStrains);
 
     return (
         <div>
             <Nav />
             <h2>This is saved strains</h2>
-            <button onClick={props.getStrains}>Load Strains</button>
+            <button onClick={props.getSavedStrains}>Load Strains</button>
             {props.error && <p>{props.error}</p>}
             {props.isFetching && <p>Loading...</p>}
-            {props.strains && props.strains.map(item => (
-                <p>{item.Name}</p>
+            {props.savedStrains && props.savedStrains.map(item => (
+                <p>{item.strain_name}</p>
             ))}
         </div>
     );
 };
 
 const mapStateToProps = state => ({
-    strains: state.strainReducer.strains,
-    error: state.strainReducer.error,
-    isFetching: state.strainReducer.isFetching
+    savedStrains: state.savedStrainsReducer.savedStrains,
+    error: state.savedStrainsReducer.error,
+    isFetching: state.savedStrainsReducer.isFetching
 });
 
 
 export default connect(
     mapStateToProps,
-    { getStrains }
+    { getSavedStrains }
 )(SavedStrains);

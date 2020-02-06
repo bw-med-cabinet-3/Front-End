@@ -1,33 +1,33 @@
 import {
-  SEARCH_STRAINS_START,
-  SEARCH_STRAINS_SUCCESS,
-  SEARCH_STRAINS_FAILURE
+  FETCH_SAVED_STRAINS_START,
+  FETCH_SAVED_STRAINS_SUCCESS,
+  FETCH_SAVED_STRAINS_FAILURE
 } from '../actions';
 // Initial state setup
 const initialState = {
-  user: [],
+  savedStrains: [],
   error: '',
   isFetching: false
 };
 
 
-export function userReducer(state=initialState, action) {
+export function savedStrainsReducer(state=initialState, action) {
   switch (action.type) {
-    case SEARCH_STRAINS_START:
+    case FETCH_SAVED_STRAINS_START:
       return {
         ...state,
         error: '',
         isFetching: true
       };
-    case SEARCH_STRAINS_SUCCESS:
+    case FETCH_SAVED_STRAINS_SUCCESS:
       console.log(state);
       return {
         ...state,
         error: '',
         isFetching: false,
-        user: action.payload
+        savedStrains: action.payload
       };
-    case SEARCH_STRAINS_FAILURE:
+    case FETCH_SAVED_STRAINS_FAILURE:
       return {
         ...state,
         error: action.payload,
