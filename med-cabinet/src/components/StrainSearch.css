@@ -25,15 +25,16 @@ body, ul {
     bottom: 90%;
 }
 .title h1 {
-        text-align: center;
-        margin-top: .5%;
-        color: green;
+    color: green;
+    position: relative;
+    bottom: 70%;
+    left: 1.75%;
 }
 form {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 85%;
+    bottom: 83%;
 }
 .cardBox {
     display: flex;

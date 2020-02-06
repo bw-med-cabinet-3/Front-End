@@ -9,9 +9,8 @@ export default function ProfileCard (localStorage) {
 
         display: flex;
         flex-flow: column nowrap;
-        width: 30%;
+        width: 100%;
         margin: 0 auto;
-        margin-top: 10%;
         border: 1px solid green;
         h2 {
             margin: 0 auto;
@@ -27,7 +26,7 @@ export default function ProfileCard (localStorage) {
 
     return (
         <Pcard>
-            <h2>User: {localStorage.message}</h2>
+            <h2>User: {localStorage.first_name} {localStorage.last_name}</h2>
             <h4>First Name:</h4>
             <p>{localStorage.first_name}</p>
             <h4>Last Name:</h4>
