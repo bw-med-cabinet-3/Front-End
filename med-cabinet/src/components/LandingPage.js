@@ -1,7 +1,6 @@
 // React
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import styled from "styled-components";
 //Import Particles-JS
 import Particles from 'react-particles-js';
 import './Landing.css';
@@ -30,73 +29,75 @@ const LandingPage = () => {
   }
 
   //styling
-  const Page = styled.div`
-    width:100%;
-    height: 110vh;
-    background: rgb(57,195,97);
-    background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
-  `;
+  // const Page = styled.div`
+  //   width:100%;
+  //   height: 110vh;
+  //   background: rgb(57,195,97);
+  //   background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
+  // `;
 
-  const Buttons = styled.div`
-    position: relative;
-    top: 35%;
-    width: 20%;
-    height: 1px;
-    background: none;
-    padding-top: 1%;
-    margin: 0 auto;
-    zIndex: 1;
-    flex-flow: row nowrap;
-  `;
+  // const Buttons = styled.div`
+  //   position: relative;
+  //   top: 35%;
+  //   width: 20%;
+  //   height: 1px;
+  //   background: none;
+  //   padding-top: 1%;
+  //   margin: 0 auto;
+  //   zIndex: 1;
+  //   flex-flow: row nowrap;
+  // `;
 
 
-  const Login = styled.button`
-    width: 25%;
-    height: 60px;
-    margin-left: 16%;
-    margin-top: 12%;
-    background: none;
-    border: 1px solid green;
-    border-radius: 5%;
-    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
-    :hover {
-      box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
-      border:none;
-      background: rgb(161,255,188);
-      background: radial-gradient(circle, rgba(161,255,188,0.8463760504201681) 0%, rgba(190,255,206,0) 61%);
-    }
-  `;
-  const Register = styled.button`
-    width: 25%;
-    height: 60px;
-    margin-left: 16%;
-    margin-top: 12%;
-    background: none;
-    border: 1px solid green;
-    border-radius: 5%;
-    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
-    :hover {
-      box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
-      border:none;
-      background: rgb(161,255,188);
-      background: radial-gradient(circle, rgba(161,255,188,0.8463760504201681) 0%, rgba(190,255,206,0) 61%);
-    }
-  `;
+  // const Login = styled.button`
+  //   color: green;
+  //   width: 25%;
+  //   height: 60px;
+  //   margin-left: 16%;
+  //   margin-top: 12%;
+  //   background: none;
+  //   border: 1px solid green;
+  //   border-radius: 5%;
+  //   box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+  //   :hover {
+  //     box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+  //     border:none;
+  //     background: rgb(161,255,188);
+  //     background: radial-gradient(circle, rgba(161,255,188,0.8463760504201681) 0%, rgba(190,255,206,0) 61%);
+  //   }
+  // `;
+  // const Register = styled.button`
+  //   color: green;
+  //   width: 25%;
+  //   height: 60px;
+  //   margin-left: 16%;
+  //   margin-top: 12%;
+  //   background: none;
+  //   border: 1px solid green;
+  //   border-radius: 5%;
+  //   box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+  //   :hover {
+  //     box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+  //     border:none;
+  //     background: rgb(161,255,188);
+  //     background: radial-gradient(circle, rgba(161,255,188,0.8463760504201681) 0%, rgba(190,255,206,0) 61%);
+  //   }
+  // `;
 
   return (
     
-    <Page>
-    <Buttons>
-      <Login onClick={toLogin}>Log in</Login>
-      <Register onClick={toRegister}>Register</Register>
-    </Buttons>
+    <div className="Page">
+    <div className="Buttons">
+      <button className="Login" onClick={toLogin}>Log in</button>
+      <button className="Register" onClick={toRegister}>Register</button>
+    </div>
     <Particles 
     params={ particleOpt }
      style={{
       "zIndex": "-1"
     }}
     />
-    </Page>
+    </div>
   );
 };
 
