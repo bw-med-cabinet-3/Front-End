@@ -11,7 +11,6 @@ export default function ProfileCard (localStorage) {
         flex-flow: column nowrap;
         width: 100%;
         margin: 0 auto;
-        margin-top: 10%;
         border: 1px solid green;
         h2 {
             margin: 0 auto;

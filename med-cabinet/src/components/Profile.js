@@ -61,7 +61,8 @@ export default function Profile() {
     `;
     const ProCard = styled.div`
         position: absolute;
-        top: 20%;
+        height: 26%;
+        top: 25%;
         left: 37.5%;
         width: 25%;
         border: 1px solid blue;
