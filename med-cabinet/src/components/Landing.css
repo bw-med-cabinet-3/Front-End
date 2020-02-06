@@ -9,18 +9,17 @@ body {
 }
 .Buttons {
     position: relative;
-    top: 35%;
+    top: 32.5%;
     width: 20%;
     height: 1px;
     background: none;
-    padding-top: 1%;
     margin: 0 auto;
     z-Index: 1;
     flex-flow: row nowrap;
 }
 .Login {
     color: green;
-    width: 25%;
+    width: 40%;
     height: 60px;
     margin-left: 16%;
     margin-top: 12%;
@@ -37,7 +36,7 @@ body {
 }
 .Rbutton {
     color: green;
-    width: 25%;
+    width: 40%;
     height: 60px;
     margin-left: 16%;
     margin-top: 12%;

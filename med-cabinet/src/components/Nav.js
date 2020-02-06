@@ -21,6 +21,7 @@ export default function Nav () {
         display:flex;
         text-align: center;
         justify-content: space-evenly;
+        position: absolute;
         width: 100%;
         height: 50px;
         margin: 0 auto;
