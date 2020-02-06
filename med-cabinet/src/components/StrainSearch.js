@@ -14,6 +14,7 @@ import styled from "styled-components";
 
 
 const StrainSearch = props => {
+    console.log(props);
 
     const Title = styled.div`
         width: 100%;
@@ -42,16 +43,32 @@ const StrainSearch = props => {
     justify-content: space-evenly;
     `;
 
-    // const [strains, setStrains] = useState([]);
-    const [filteredStrains, setFilteredStrains] = useState([]);
+    
+    const [data, setData] = useState([]);
+    const [query, setQuery] = useState("");
 
-    const search = nameArr => {
-        setFilteredStrains(nameArr)
-    }
+    // const search = nameArr => {
+    //     setFilteredStrains(nameArr)
+    // }
 
     useEffect(() => {
         props.getStrains();
-    }, []);
+    }, [])
+
+    useEffect(() => {
+        axiosWithAuth()
+            .get('/strains')
+            .then(res => {
+                console.log(res);
+                const searchResult = res.data.filter(item => item.strain_name.toLowerCase().includes(query.toLowerCase()));
+                setData(searchResult);
+            })
+            .catch(err => console.log(err));
+    }, [query]);
+
+    const handleChanges = e => {
+        setQuery(e.target.value);
+    };
 
     function paginate(array, page_size, page_number) {
         // human-readable page numbers usually start with 1, so we reduce 1 in the first argument
@@ -65,9 +82,19 @@ const StrainSearch = props => {
             <Title>
                 <h1>Strains</h1>
             </Title>
-            <SearchDiv>
-                <Search />
-            </SearchDiv>
+            {/* <SearchDiv> */}
+            <form>
+                <input
+                onChange={handleChanges}
+                type="text"
+                name="search"
+                value={query}
+                placeholder="Search a Strain by Name"/>
+            </form>
+            {data.map((item, i) => (
+                <p key={i}>{item.strain_name}</p>
+            ))}
+            {/* </SearchDiv>
             <CardSection>
             {props.strains.map((props, i) => (
                 <Card
@@ -85,7 +112,7 @@ const StrainSearch = props => {
                   )}
                 />
                    ))}
-            </CardSection>
+            </CardSection> */}
         </div>
     );
 };
