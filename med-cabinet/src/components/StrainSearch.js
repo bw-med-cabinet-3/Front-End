@@ -82,6 +82,7 @@ const StrainSearch = props => {
 
 
     return (
+        <div className="bigBG">
         <div className="homeWrap">
             <Nav />
             <div className="pWrap">
@@ -126,6 +127,7 @@ const StrainSearch = props => {
                 />
                    ))}
             </div>
+        </div>
         </div>
     );
 };
