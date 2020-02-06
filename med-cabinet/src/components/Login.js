@@ -19,7 +19,10 @@ const Login = () => {
     "position": "absolute"
   }
 
-  const Page = styled.div``;
+  const Page = styled.div`
+  width: 100%;
+  height: 150vh;
+  `;
 
   // Set initial state for credentials, fetch check and error
   const [credentials, setCredentials] = useState({

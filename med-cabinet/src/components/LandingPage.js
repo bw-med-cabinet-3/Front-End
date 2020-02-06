@@ -31,23 +31,24 @@ const LandingPage = () => {
   //styling
   const Page = styled.div`
     width:100%;
-    height: 120vh;
+    height: 110vh;
     background: rgb(57,195,97);
     background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
   `;
 
-  // const ButtonWrap = styled.div`
-  //   position: relative;
-  //   top: 25%;
-  //   width: 100%;
-  //   height: 0.5px;
-  //   background: none;
-  //   padding-top: 1%;
-  //   margin: 0 auto;
-  //   zIndex: 2;
-  //   flex-flow: row nowrap;
-  //   border: 1px solid black;
-  // `;
+  const Buttons = styled.div`
+    position: relative;
+    top: 45%;
+    width: 20%;
+    height: 1px;
+    background: none;
+    padding-top: 1%;
+    margin: 0 auto;
+    zIndex: 1;
+    flex-flow: row nowrap;
+  `;
+
+
   const Login = styled.button`
     width: 25%;
     height: 60px;
@@ -84,10 +85,10 @@ const LandingPage = () => {
   return (
     
     <Page>
-    <div>
-    <Login onClick={toLogin}>Log in</Login>
-    <Register onClick={toRegister}>Register</Register>
-    </div>
+    <Buttons>
+      <Login onClick={toLogin}>Log in</Login>
+      <Register onClick={toRegister}>Register</Register>
+    </Buttons>
     <Particles 
     params={ particleOpt }
      style={{
