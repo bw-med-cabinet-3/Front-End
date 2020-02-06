@@ -5,7 +5,6 @@ import { useHistory } from 'react-router-dom';
 import { axiosWithAuth } from '../utils/axiosWithAuth';
 // Styling
 import { Button, Form, FormGroup, Input } from 'reactstrap';
-import styled from "styled-components";
 import "./Login.css";
 //Import Particles-JS
 import Particles from 'react-particles-js';
@@ -74,9 +73,16 @@ const Login = () => {
 
   return (
     <div className="page">
+    <div className="bgWrap">
+    <Particles 
+    params={ particleOpt }
+     style={{
+      "zIndex": "-1"
+    }}
+    />
     <div className="login">
       <div className="login-cont">
-        <h1>OH LOOK IT'S A LOGIN</h1>
+        <h1>Login</h1>
         <Form inline onSubmit={login}>
           <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
             <Input type="email" name="email" placeholder="Email" value={credentials.email} onChange={handleChanges} required />
@@ -90,12 +96,7 @@ const Login = () => {
         <p>{error ? error : null}</p>
       </div>
     </div>
-    <Particles 
-    params={ particleOpt }
-     style={{
-      "zIndex": "-1"
-    }}
-    />
+    </div>
     </div>
   );
 };

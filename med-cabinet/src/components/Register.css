@@ -2,64 +2,63 @@ body, ul {
     margin: 0;
     padding: 0;
 }
-.page {
+.Page {
     width: 100%;
+    z-Index: -1;
     height: 100vh;
     background: rgb(57,195,97);
     background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
 }
-.login {
-    width: 30%;
-    position: relative;
-    top: -50%;
+.Register {
+    width: 18%;
+    height: 500px;
     margin: 0 auto;
-    z-Index: 2;
+    position: absolute;
+    right: 40%;
+    top: 20%;
 }
-.login-cont {
-    margin: 0 auto;
-    width: 50%;
-    z-Index: 2;
-}
-.login h1 {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 15%;
-}
-.login form {
+.Register .Card  {
+    width: 80%;
     display: flex;
     flex-flow: column nowrap;
     margin: 0 auto;
-}
-.login form Input {
-    margin-left: 1.75%;
-    margin-bottom: 18.5%;
+    margin-top: 5%;
+    z-Index: 2;
     text-align: center;
 }
-.login button {
+.Card h2 {
+    margin-bottom: 15%;
+}
+.Card Input {
+    text-align: center;
+    margin-bottom: 12%;
+}
+.Card Button {
+
     display: flex;
     justify-content: center;
     width: 70%;
     color:green;
     height: 60px;
-    margin-top: 2%;
+    margin-left: 16%;
+    margin-top: 12%;
     background: none;
     border: 1px solid green;
     border-radius: 5%;
     box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
 }
-.login button:hover {
+.Card Button:hover {
     box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
     border:none;
     background: rgb(161,255,188);
     background: radial-gradient(circle, rgba(161,255,188,0.8463760504201681) 0%, rgba(190,255,206,0) 61%);
     color: forestgreen
 }
-.login p {
+.Card p {
     text-align: center;
     margin-top: 5%;
 }
-.page .bgWrap {
+.bgWrap {
     z-Index: -1;
     height: 150vh;
-
 }

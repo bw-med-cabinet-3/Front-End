@@ -4,15 +4,13 @@ import { Link } from 'react-router-dom';
 // Components
 import StrainDetails from './StrainDetails';
 // Styling
-import styled from "styled-components";
-import {
-  Card, CardBody,
-  CardTitle, CardSubtitle, Button
-} from 'reactstrap';
+// import {
+//   Card, CardBody,
+//   CardTitle, CardSubtitle, Button
+// } from 'reactstrap';
 //Icon Import
 import Star from "./img/star.png"
-//Import Flippy
-// import Flippy, { FrontSide, BackSide } from 'react-flippy';
+import "./StrainCard.css";
 
 
 const StrainCard = (props) => {
@@ -113,37 +111,6 @@ const StrainCard = (props) => {
     
 
     return (
-    //     <Flippy
-    //     flipOnHover={false} // default false
-    //     flipOnClick={true} // default false
-    //     flipDirection="horizontal" // horizontal or vertical
-    //     //ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
-    //     // if you pass isFlipped prop component will be controlled component.
-    //     // and other props, which will go to div
-    //   >
-    //     <FrontSide
-    //       style={{
-    //         backgroundColor: '#41669d',
-    //       }}
-    //     >
-    //             <h2>Strain: {props.name}</h2>
-    //             <p>Type: {props.type}</p>
-    //             <h3>Rating:</h3>
-    //             <Rate> 
-    //                 <h4>{props.rating}</h4>
-    //                 <img src={Star} alt="icon for rating"/>
-    //             </Rate>
-    //         </div>
-    //     </FrontSide>
-    //     <BackSide
-    //       style={{ backgroundColor: '#175852'}}>
-    //       <ul>Effects:{props.effects}</ul>
-    //       <ul>Flavors: {props.flavors}</ul>
-    //       <p>Description: {props.description}</p>
-    //     </BackSide>
-    //   </Flippy>
-
-    // <p>{props.strain_name}</p>
             // <Box>
             //     <h2>Strain: {props.name}</h2>
             //     <p>Type: {props.type}</p>
@@ -168,15 +135,21 @@ const StrainCard = (props) => {
             //     <Button type="submit">Save Strain</Button>
 
             // </Box>
-            <div>
-                <Card key={props.strain_id}>
-                    {/* <CardImg top width="100%" src={Star} alt="icon for rating" /> */}
-                    <CardBody>
-                        <CardTitle>Strain: {props.name}</CardTitle>
-                        <Button><Link to="/strain-details">Click for more details</Link></Button>
-                    </CardBody>
-                </Card>
+            // <div className="wrap">
+            <div className="bigBox">
+                    <div className="card-cont" key={props.strain_id}>
+                    <div className="card">  
+                        <h2>Strain: {props.name}</h2>
+                        <h4>Rating:</h4>
+                        <div className="img">
+                        <h3>{props.rating}</h3>
+                            <img src={ Star } alt="logo credit"/>
+                        </div>
+                        <button><Link to="/strain-details" style={{ textDecoration: 'none', color: 'green' }}>Strain Details</Link></button>
+                        </div>
+                    </div>
             </div>
+
     )
 }
 export default StrainCard;

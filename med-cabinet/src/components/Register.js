@@ -7,7 +7,7 @@ import { axiosWithAuth } from '../utils/axiosWithAuth';
 import { Button, Form, FormGroup, Input } from 'reactstrap';
 //Import Particles-JS
 import Particles from 'react-particles-js';
-import styled from "styled-components";
+import "./Register.css";
 
 
 const Register = () => {
@@ -20,32 +20,32 @@ const Register = () => {
     "position": "absolute"
   }
 
-  const Page = styled.div`
-  width:100%;
-  height: 100vh;
-  background: rgb(57,195,97);
-  background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
-  zIndex: 2;
-  `;
-  const Register = styled.div`
-    display: flex;
-    width: 20%;
-    margin-left: 42%;
-    margin-top: 0%;
-  `;
-  const Card = styled.div`
-    display: flex;
-    flex-flow: column nowrap;
-    margin: 0 auto;
-    h2 {
-      margin: 0 auto;
-      margin-bottom: 4%;
-    }
-    button {
-      display:flex;
-      margin: 0 auto;
-    }
-  `;
+  // const Page = styled.div`
+  // width:100%;
+  // height: 100vh;
+  // background: rgb(57,195,97);
+  // background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
+  // zIndex: 2;
+  // `;
+  // const Register = styled.div`
+  //   display: flex;
+  //   width: 20%;
+  //   margin-left: 42%;
+  //   margin-top: 0%;
+  // `;
+  // const Card = styled.div`
+  //   display: flex;
+  //   flex-flow: column nowrap;
+  //   margin: 0 auto;
+  //   h2 {
+  //     margin: 0 auto;
+  //     margin-bottom: 4%;
+  //   }
+  //   button {
+  //     display:flex;
+  //     margin: 0 auto;
+  //   }
+  // `;
   // Set initial state for credentials, fetch check and error
   const [credentials, setCredentials] = useState({
     first_name: '',
@@ -78,64 +78,66 @@ const Register = () => {
 
 
   return (
-    <Page>
-    <Register>
-      <Card>
-        <h2>Register:</h2>
-        <Form onSubmit={register}>
-          <FormGroup>
-            <Input
-              type="text"
-              name="first_name"
-              placeholder="First Name"
-              value={credentials.first_name}
-              onChange={handleChanges}
-              required
-            />
-          </FormGroup>
-          <FormGroup>
-            <Input
-              type="text"
-              name="last_name"
-              placeholder="Last Name"
-              value={credentials.last_name}
-              onChange={handleChanges}
-              required
-            />
-          </FormGroup>
-          <FormGroup>
-            <Input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={credentials.email}
-              onChange={handleChanges}
-              required
-            />
-          </FormGroup>
-          <FormGroup>
-            <Input
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={credentials.password}
-              onChange={handleChanges}
-              required
-            />
-          </FormGroup>
-          <Button>Submit</Button>
-        </Form>
-        <p>{isFetching ? 'Loading...' : null}</p>
-        <p>{error ? error : null}</p>
-      </Card>
-    </Register>
-    <Particles 
-    params={ particleOpt }
-     style={{
-      "zIndex": "-1"
-    }}
-    />
-    </Page>
+    <div className="Page">
+    <div className="bigWrap">
+      <div className="Register">
+        <div className="Card">
+          <h2>Register:</h2>
+          <Form onSubmit={register}>
+            <FormGroup>
+              <Input
+                type="text"
+                name="first_name"
+                placeholder="First Name"
+                value={credentials.first_name}
+                onChange={handleChanges}
+                required
+              />
+            </FormGroup>
+            <FormGroup>
+              <Input
+                type="text"
+                name="last_name"
+                placeholder="Last Name"
+                value={credentials.last_name}
+                onChange={handleChanges}
+                required
+              />
+            </FormGroup>
+            <FormGroup>
+              <Input
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={credentials.email}
+                onChange={handleChanges}
+                required
+              />
+            </FormGroup>
+            <FormGroup>
+              <Input
+                type="password"
+                name="password"
+                placeholder="Password"
+                value={credentials.password}
+                onChange={handleChanges}
+                required
+              />
+            </FormGroup>
+            <Button>Submit</Button>
+          </Form>
+          <p>{isFetching ? 'Loading...' : null}</p>
+          <p>{error ? error : null}</p>
+        </div>
+      </div>
+      </div>
+      <Particles 
+      params={ particleOpt }
+      style={{
+        "zIndex": "-1"
+      }}
+      />
+    </div>
   );
 };
 

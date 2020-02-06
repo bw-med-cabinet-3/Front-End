@@ -1,0 +1,65 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+}
+.bigBox {
+    /* border: 1px solid black; */
+    display:flex;
+    flex-flow: row wrap;
+    width: 33%;
+    justify-content: center;
+    border:none;
+}
+h2 {
+    font-size: 2rem;
+    color: green;
+    border: none;
+}
+.card {
+    display: flex;
+    border: none;
+    width: 400px;
+    height: 500px;
+    margin-bottom: 5%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba( 0, 0, 0, 0.2), 0 6px 20px 0 rgba( 0, 0, 0, 0.19);
+
+}
+.card button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
+    color:green;
+    height: 60px;
+    margin-top: 2%;
+    background: none;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+}
+.card button:hover {
+    border: 1px solid green;
+    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+    color: forestgreen
+}
+.card h2 {
+    padding: 50px;
+}
+.card h4 {
+    margin: 0 auto;
+    margin-bottom: 15%;
+}
+.card .img {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+.img h3 {
+    margin-right: 20%;
+    margin-top: 10%;
+}
+.card button {
+    margin-bottom: 10%;
+}
