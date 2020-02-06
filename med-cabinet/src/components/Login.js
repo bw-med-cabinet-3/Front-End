@@ -74,6 +74,13 @@ const Login = () => {
 
   return (
     <div className="page">
+    <div className="bgWrap">
+    <Particles 
+    params={ particleOpt }
+     style={{
+      "zIndex": "-1"
+    }}
+    />
     <div className="login">
       <div className="login-cont">
         <h1>Login</h1>
@@ -90,12 +97,7 @@ const Login = () => {
         <p>{error ? error : null}</p>
       </div>
     </div>
-    <Particles 
-    params={ particleOpt }
-     style={{
-      "zIndex": "-1"
-    }}
-    />
+    </div>
     </div>
   );
 };
