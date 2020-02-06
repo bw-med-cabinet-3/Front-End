@@ -60,6 +60,8 @@ const Login = () => {
           localStorage.setItem('email', res.data.user.email);
           localStorage.setItem('password', credentials.password);
           localStorage.setItem('id', res.data.user.user_id);
+          localStorage.setItem('firstName', res.data.user.first_name);
+          localStorage.setItem('lastName', res.data.user.last_name);
           localStorage.setItem('message', res.data.message);
           history.push('/home');
         } else {
