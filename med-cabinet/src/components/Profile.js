@@ -56,6 +56,13 @@ export default function Profile() {
     `;
     const Settings = styled.div`
         display:flex;
+        position: relative;
+        bottom:50%;
+    `;
+    const ProCard = styled.div`
+        position: absolute;
+        top: 25%;
+        left: 40%;
     `;
 
     return (
@@ -68,13 +75,13 @@ export default function Profile() {
             }}
             />
             <div className="title">
-            <h2>Profile Page</h2>
+                <h2>Profile Page</h2>
             </div>
-            <div className="proCard">
-            <ProfileCard />
-            </div>
+            <ProCard>
+                <ProfileCard />
+            </ProCard>
             <Settings>
-            <StyledLink to="/settings">Settings</StyledLink>            
+                <StyledLink to="/settings">Settings</StyledLink>            
             </Settings>
         </div>
     );
