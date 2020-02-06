@@ -50,6 +50,7 @@ const LandingPage = () => {
     background: white;
     border: 1px solid #47d147;
     border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
     :hover {
       box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
       border:none;
@@ -62,6 +63,7 @@ const LandingPage = () => {
     background: white;
     border: 1px solid #47d147;
     border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
     :hover {
       box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
       border:none;
