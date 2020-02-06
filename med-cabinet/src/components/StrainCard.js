@@ -166,14 +166,13 @@ const StrainCard = (props) => {
             <div className="bigBox">
                     <div className="card-cont" key={props.strain_id}>
                     <div className="card">  
-                        <h2>Strain: {props.name}</h2>
-                        <h4>Rating:</h4>
+                        <h4>Strain: {props.name}</h4>
+                        <h5>Rating:</h5>
                         <div className="img">
-                        <h3>{props.rating}</h3>
+                        <h6>{props.rating}</h6>
                             <img src={ Star } alt="logo credit"/>
                         </div>
                         <button><Link to={`/strain-details/${props.strain_id}`} style={{ textDecoration: 'none', color: 'green' }}>Strain Details</Link></button>
-                        <button id={props.strain_id} onClick={clickHandler}>Add to Saved Strains list</button>
                         </div>
                     </div>
             </div>

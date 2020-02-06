@@ -11,16 +11,15 @@ body, ul {
     justify-content: center;
     border:none;
 }
-h2 {
-    font-size: 2rem;
+h4 {
     color: green;
     border: none;
 }
 .card {
     display: flex;
     border: none;
-    width: 400px;
-    height: 500px;
+    width: 350px;
+    height: 200px;
     margin-bottom: 5%;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba( 0, 0, 0, 0.2), 0 6px 20px 0 rgba( 0, 0, 0, 0.19);
@@ -49,17 +48,14 @@ h2 {
 }
 .card h4 {
     margin: 0 auto;
-    margin-bottom: 15%;
 }
 .card .img {
     display: flex;
     margin: 0 auto;
-    margin-bottom: 10%;
 }
-.img h3 {
+.img h6 {
     margin-right: 20%;
     margin-top: 10%;
 }
 .card button {
-    margin-bottom: 10%;
 }
