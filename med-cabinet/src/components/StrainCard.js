@@ -1,13 +1,22 @@
+// React
 import React from "react";
+import { Link } from 'react-router-dom';
+// Components
+import StrainDetails from './StrainDetails';
+// Styling
 import styled from "styled-components";
+import {
+  Card, CardBody,
+  CardTitle, CardSubtitle, Button
+} from 'reactstrap';
 //Icon Import
 import Star from "./img/star.png"
 //Import Flippy
 // import Flippy, { FrontSide, BackSide } from 'react-flippy';
 
 
-const Card = (props) => {
-    console.log(props);
+const StrainCard = (props) => {
+    // console.log(props);
 
     // Box , Rate , Effects , Flavors , Desc , Button
     
@@ -101,6 +110,8 @@ const Card = (props) => {
     // }
     // `;
 
+    
+
     return (
     //     <Flippy
     //     flipOnHover={false} // default false
@@ -132,7 +143,7 @@ const Card = (props) => {
     //     </BackSide>
     //   </Flippy>
 
-    <p>{props.strain_name}</p>
+    // <p>{props.strain_name}</p>
             // <Box>
             //     <h2>Strain: {props.name}</h2>
             //     <p>Type: {props.type}</p>
@@ -157,6 +168,15 @@ const Card = (props) => {
             //     <Button type="submit">Save Strain</Button>
 
             // </Box>
+            <div>
+                <Card key={props.strain_id}>
+                    {/* <CardImg top width="100%" src={Star} alt="icon for rating" /> */}
+                    <CardBody>
+                        <CardTitle>Strain: {props.name}</CardTitle>
+                        <Button><Link to="/strain-details">Click for more details</Link></Button>
+                    </CardBody>
+                </Card>
+            </div>
     )
 }
-export default Card;
+export default StrainCard;
