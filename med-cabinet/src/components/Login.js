@@ -6,6 +6,7 @@ import { axiosWithAuth } from '../utils/axiosWithAuth';
 // Styling
 import { Button, Form, FormGroup, Input } from 'reactstrap';
 import styled from "styled-components";
+import "./Login.css";
 //Import Particles-JS
 import Particles from 'react-particles-js';
 
@@ -23,12 +24,12 @@ const Login = () => {
   }
 
 
-  const Page = styled.div`
-  width: 100%;
-  height: 110vh;
-  background: rgb(57,195,97);
-  background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
-  `;
+  // const Page = styled.div`
+  // width: 100%;
+  // height: 110vh;
+  // background: rgb(57,195,97);
+  // background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
+  // `;
 
   // Set initial state for credentials, fetch check and error
   const [credentials, setCredentials] = useState({
@@ -72,7 +73,7 @@ const Login = () => {
 
 
   return (
-    <Page>
+    <div className="page">
     <div className="login">
       <div className="login-cont">
         <h1>OH LOOK IT'S A LOGIN</h1>
@@ -95,7 +96,7 @@ const Login = () => {
       "zIndex": "-1"
     }}
     />
-    </Page>
+    </div>
   );
 };
 

@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 import styled from "styled-components";
 //Import Particles-JS
 import Particles from 'react-particles-js';
+import './Landing.css';
 
 
 const LandingPage = () => {
