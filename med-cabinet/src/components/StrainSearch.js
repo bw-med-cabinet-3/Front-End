@@ -11,21 +11,21 @@ import StrainCard from "./StrainCard";
 import Search from "./Search";
 // Styling
 import styled from "styled-components";
+import "./StrainSearch.css";
 
 
 const StrainSearch = props => {
-    console.log(props);
 
-    const Title = styled.div`
-        width: 100%;
-        height: 50px;
-        h1 {
-            display:flex;
-            justify-content: center;
-            margin-top:7%;
-            color: green;
-        }
-    `;  
+    // const Title = styled.div`
+    //     width: 100%;
+    //     height: 50px;
+    //     h1 {
+    //         display:flex;
+    //         justify-content: center;
+    //         margin-top:7%;
+    //         color: green;
+    //     }
+    // `;  
 
     const SearchDiv = styled.div`
         display: flex;
@@ -77,11 +77,11 @@ const StrainSearch = props => {
 
 
     return (
-        <div>
+        <div className="wrap">
             <Nav />
-            <Title>
+            <div className="title">
                 <h1>Strains</h1>
-            </Title>
+            </div>
             {/* <SearchDiv> */}
             <form>
                 <input
@@ -95,7 +95,7 @@ const StrainSearch = props => {
                 <p key={i}>{item.strain_name}</p>
             ))} */}
             {/* </SearchDiv> */}
-            <CardSection>
+            <div className="cardBox">
             {data.map((props, i) => (
                 <StrainCard
                   key={i}
@@ -112,7 +112,7 @@ const StrainSearch = props => {
                   )}
                 />
                    ))}
-            </CardSection>
+            </div>
         </div>
     );
 };
