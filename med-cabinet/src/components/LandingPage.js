@@ -38,7 +38,7 @@ const LandingPage = () => {
 
   const ButtonWrap = styled.div`
     position: relative;
-    top: 30%;
+    top: 25%;
     width: 100%;
     height: 0.5px;
     background: none;
