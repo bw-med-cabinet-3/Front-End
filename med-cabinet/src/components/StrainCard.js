@@ -9,9 +9,8 @@ import StrainDetails from './StrainDetails';
 //   CardTitle, CardSubtitle, Button
 // } from 'reactstrap';
 //Icon Import
-import Star from "./img/star.png"
-//Import Flippy
-// import Flippy, { FrontSide, BackSide } from 'react-flippy';
+// import Star from "./img/star.png"
+import "./StrainCard.css";
 
 
 const StrainCard = (props) => {
@@ -136,14 +135,17 @@ const StrainCard = (props) => {
             //     <Button type="submit">Save Strain</Button>
 
             // </Box>
-            <div className="Wrap">
-                <div className="Card" key={props.strain_id}>
-                    <div className="CardBox">
-                        <div className="Title">Strain: {props.name}</div>
-                        <button><Link to="/strain-details">Click for more details</Link></button>
+            <div className="wrap">
+            <div className="bigBox">
+                <div className="card" key={props.strain_id}>
+                    <div className="cardBox">
+                        <div className="title">Strain: {props.name}
+                        </div>
+                        <button className="detailsButton"><Link to="/strain-details">Strain Details</Link></button>
                     </div>
                 </div>
             </div>
+        </div>
     )
 }
 export default StrainCard;
