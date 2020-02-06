@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import StrainSearch from "./components/StrainSearch";
+import StrainDetails from './components/StrainDetails';
 import SavedStrains from "./components/SavedStrains";
 import Profile from "./components/Profile";
 import Settings from "./components/Settings";
@@ -29,6 +30,9 @@ function App() {
         </Route>
         <Route path="/strain-search">
           <StrainSearch />
+        </Route>
+        <Route path="/strain-details">
+          <StrainDetails />
         </Route>
         <Route path="/saved-strains">
           <SavedStrains />

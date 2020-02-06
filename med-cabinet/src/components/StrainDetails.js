@@ -10,6 +10,7 @@ import Star from "./img/star.png"
 
 
 const StrainDetails = props => {
+  console.log(props)
   return (
     <div>
       <Card key={props.strain_id}>
@@ -20,7 +21,7 @@ const StrainDetails = props => {
           <CardSubtitle><h3>Effects:</h3><ul>{props.effects}</ul></CardSubtitle>
           <CardSubtitle><h3>Flavors:</h3><ul>{props.flavors}</ul></CardSubtitle>
           <CardSubtitle>Description:<p>{props.description}</p></CardSubtitle>
-          <Button>Button</Button>
+          <Button>Add to Saved Strains list</Button>
         </CardBody>
       </Card>
     </div>

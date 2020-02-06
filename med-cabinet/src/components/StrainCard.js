@@ -1,6 +1,11 @@
 // React
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+// Axios
+import { axiosWithAuth } from "../utils/axiosWithAuth";
+// Actions
+import { getStrains } from '../actions';
 // Components
 import StrainDetails from './StrainDetails';
 // Styling
@@ -107,8 +112,30 @@ const StrainCard = (props) => {
     //   transition: all 0.3s ease;
     // }
     // `;
+    const [strainID, setStrainID] = useState();
 
+    useEffect(() => {
+        console.log(strainID);
+        if (strainID) {
+            axiosWithAuth()
+            .post(`/users/${localStorage.id}/strains`, strainID)
+            .then(res => console.log(res))
+            .catch(err => console.log(err));
+        }
+    }, [strainID])
+
+    const clickHandler = e => {
+        e.preventDefault();
+        // props.getStrains();
+        console.log("E.TARGET.ID", e.target.id);
+        setStrainID({ strainID: e.target.id });
+        console.log("STRAINID", strainID);
+        // alert("Strain saved!");
+    };
     
+
+    // {strainID: {props.strain_id}}
+
 
     return (
             // <Box>
@@ -145,11 +172,23 @@ const StrainCard = (props) => {
                         <h3>{props.rating}</h3>
                             <img src={ Star } alt="logo credit"/>
                         </div>
-                        <button><Link to="/strain-details" style={{ textDecoration: 'none', color: 'green' }}>Strain Details</Link></button>
+                        <button><Link to={`/strain-details/${props.strain_id}`} style={{ textDecoration: 'none', color: 'green' }}>Strain Details</Link></button>
+                        <button id={props.strain_id} onClick={clickHandler}>Add to Saved Strains list</button>
                         </div>
                     </div>
             </div>
 
     )
 }
-export default StrainCard;
+
+const mapStateToProps = state => ({
+    strains: state.strainReducer.strains,
+    error: state.strainReducer.error,
+    isFetching: state.strainReducer.isFetching
+});
+
+
+export default connect(
+    mapStateToProps,
+    { getStrains }
+)(StrainCard);

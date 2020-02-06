@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import { strainReducer } from './strainReducer';
-// import { searchReducer } from './searchReducer';
+import { savedStrainsReducer } from './savedStrainsReducer';
 
 export const rootReducer = combineReducers({
   strainReducer,
-  // searchReducer
+  savedStrainsReducer
 });
