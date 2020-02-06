@@ -4,17 +4,21 @@ body, ul {
 }
 .homeWrap {
     width:100%;
-    height: 110vh;
+    height: 100vh;
+    z-index: -1;
     position: absolute;
     background: rgb(213,255,240);
     background: radial-gradient(circle, rgba(213,255,240,1) 0%, rgba(199,199,199,0.25253851540616246) 100%);
     
 }
+.pWrap {
+    width: 100%;
+}
 .title {
     width: 100%;
     height: 75px;
-    margin-top: 6%;
-
+    position: relative;
+    bottom: 80%;
 }
 .title h1 {
         text-align: center;
@@ -24,10 +28,13 @@ body, ul {
 form {
     display: flex;
     justify-content: center;
-    margin-bottom: 2%;
+    position: relative;
+    bottom: 75%;
 }
 .cardBox {
     display: flex;
     width: 100%;
     flex-flow: row wrap;
+    position: relative;
+    bottom: 65%;
 }
