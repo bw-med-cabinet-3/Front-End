@@ -52,8 +52,8 @@ const LandingPage = () => {
     height: 60px;
     margin-left: 16%;
     margin-top: 6.75%;
-    background: white;
-    border: 1px solid #47d147;
+    background: none;
+    border: 1px solid green;
     border-radius: 5%;
     box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
     :hover {
@@ -68,8 +68,8 @@ const LandingPage = () => {
     height: 60px;
     margin-left: 16%;
     margin-top: 6.75%;
-    background: white;
-    border: 1px solid #47d147;
+    background: none;
+    border: 1px solid green;
     border-radius: 5%;
     box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
     :hover {
