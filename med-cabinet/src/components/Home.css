@@ -1,0 +1,72 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+
+}
+.homeWrap {
+    width: 100%;
+}
+.titleHome {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    margin-top: 5%;
+}
+.cardDiv {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 5.75%;
+}
+.card1{
+    width: 30%;
+    height: 200px;
+    background: white;
+}
+.card1 .button1 {
+    width: 350px;
+    height: 200px;
+    border: 1px solid green;
+    background: white;
+}
+.button1:hover {
+    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+    color: green;
+    border-radius: 4%;
+    transition: all 0.3s ease;
+}
+.card2 {
+    width: 30%;
+    height: 200px;
+    background: white;
+}
+.card2 .button2 {
+    width: 350px;
+    height: 200px;
+    border: 1px solid green;
+    background: white;
+}
+.button2:hover {
+    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+    color: green;
+    border-radius: 4%;
+    transition: all 0.3s ease;
+}
+.card3 {
+    width: 30%;
+    height: 200px;
+    background: white;
+}
+.card3 .button3 {
+    width: 350px;
+    height: 200px;
+    border: 1px solid green;
+    background: white;
+}
+.button3:hover {
+    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+    color: green;
+    border-radius: 4%;
+    transition: all 0.3s ease;
+}

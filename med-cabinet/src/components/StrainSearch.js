@@ -10,7 +10,6 @@ import Nav from "./Nav";
 import StrainCard from "./StrainCard";
 import Search from "./Search";
 // Styling
-import styled from "styled-components";
 import "./StrainSearch.css";
 
 
@@ -27,21 +26,21 @@ const StrainSearch = props => {
     //     }
     // `;  
 
-    const SearchDiv = styled.div`
-        display: flex;
-        justify-content: center;
-        width: 30%;
-        margin: 0 auto;
-        margin-top: 7%;
-        margin-bottom: 8%;
-    `;
+    // const SearchDiv = styled.div`
+    //     display: flex;
+    //     justify-content: center;
+    //     width: 30%;
+    //     margin: 0 auto;
+    //     margin-top: 7%;
+    //     margin-bottom: 8%;
+    // `;
 
-    const CardSection = styled.div`
-    width:100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    `;
+    // const CardSection = styled.div`
+    // width:100%;
+    // display: flex;
+    // flex-flow: row wrap;
+    // justify-content: space-evenly;
+    // `;
 
     
     const [data, setData] = useState([]);
