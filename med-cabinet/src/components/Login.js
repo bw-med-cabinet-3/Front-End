@@ -5,7 +5,6 @@ import { useHistory } from 'react-router-dom';
 import { axiosWithAuth } from '../utils/axiosWithAuth';
 // Styling
 import { Button, Form, FormGroup, Input } from 'reactstrap';
-import styled from "styled-components";
 import "./Login.css";
 //Import Particles-JS
 import Particles from 'react-particles-js';

@@ -35,6 +35,25 @@ body, ul {
     margin-bottom: 18.5%;
     text-align: center;
 }
+.login button {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    color:green;
+    height: 60px;
+    margin-top: 2%;
+    background: none;
+    border: 1px solid green;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+}
+.login button:hover {
+    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+    border:none;
+    background: rgb(161,255,188);
+    background: radial-gradient(circle, rgba(161,255,188,0.8463760504201681) 0%, rgba(190,255,206,0) 61%);
+    color: forestgreen
+}
 .page .bgWrap {
     z-Index: -1;
     height: 150vh;
