@@ -38,7 +38,7 @@ const LandingPage = () => {
 
   const Buttons = styled.div`
     position: relative;
-    top: 45%;
+    top: 35%;
     width: 20%;
     height: 1px;
     background: none;
