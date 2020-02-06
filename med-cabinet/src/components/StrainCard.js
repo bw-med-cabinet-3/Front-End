@@ -9,7 +9,7 @@ import StrainDetails from './StrainDetails';
 //   CardTitle, CardSubtitle, Button
 // } from 'reactstrap';
 //Icon Import
-// import Star from "./img/star.png"
+import Star from "./img/star.png"
 import "./StrainCard.css";
 
 
@@ -137,10 +137,16 @@ const StrainCard = (props) => {
             // </Box>
             // <div className="wrap">
             <div className="bigBox">
-                <div className="card" key={props.strain_id}>
-                        <div className="title">Strain: {props.name}
+                    <div className="card-cont" key={props.strain_id}>
+                    <div className="card">  
+                        <h2>Strain: {props.name}</h2>
+                        <h4>Rating:</h4>
+                        <div className="img">
+                        <h3>{props.rating}</h3>
+                            <img src={ Star } alt="logo credit"/>
                         </div>
-                        <button className="detailsButton"><Link to="/strain-details" style={{ textDecoration: 'none', color: 'green' }}>Strain Details</Link></button>
+                        <button><Link to="/strain-details" style={{ textDecoration: 'none', color: 'green' }}>Strain Details</Link></button>
+                        </div>
                     </div>
             </div>
 

@@ -1,17 +1,24 @@
 body, ul {
     margin: 0;
     padding: 0;
+    overflow: scroll;
 }
 .bigBox {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display:flex;
     flex-flow: row wrap;
     width: 33%;
     justify-content: center;
+    border:none;
 }
-.title {
+h2 {
     font-size: 2rem;
     color: green;
+    border: none;
+}
+.card {
+    display: flex;
+    border: none;
 }
 .card button {
     display: flex;
@@ -32,4 +39,17 @@ body, ul {
     background: rgb(161,255,188);
     background: radial-gradient(circle, rgba(161,255,188,0.8463760504201681) 0%, rgba(190,255,206,0) 61%);
     color: forestgreen
+}
+.card h2 {
+    padding: 50px;
+}
+
+.card .img {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+.img h3 {
+    margin-right: 20%;
+    margin-top: 10%;
 }
