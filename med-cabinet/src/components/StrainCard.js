@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 // Axios
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 // Actions
-import { getStrains } from '../actions';
+import { getStrains, findStrain } from '../actions';
 // Components
 import StrainDetails from './StrainDetails';
 // Styling
@@ -114,7 +114,7 @@ const StrainCard = (props) => {
     // `;
     const [strainID, setStrainID] = useState();
     const [strainData, setStrainData] = useState({});
-    console.log(strainData)
+    // console.log(strainData)
 
     useEffect(() => {
         console.log(strainID);
@@ -145,7 +145,7 @@ const StrainCard = (props) => {
         strain_effects: props.effects,
         strain_flavors: props.flavors
     }
-    console.log(strainHolder);
+    // console.log(strainHolder);
 
 
     return (
@@ -185,7 +185,6 @@ const StrainCard = (props) => {
                         </div>
                         <button><Link to={`/strain-details/${props.strain_id}`} style={{ textDecoration: 'none', color: 'green' }}>Strain Details</Link></button>
                         <button id={props.strain_id} onClick={clickHandler}>Save Strain</button>
-
                         </div>
                     </div>
             </div>
@@ -202,5 +201,5 @@ const mapStateToProps = state => ({
 
 export default connect(
     mapStateToProps,
-    { getStrains }
+    { getStrains, findStrain }
 )(StrainCard);

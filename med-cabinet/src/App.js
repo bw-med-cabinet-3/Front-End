@@ -13,6 +13,7 @@ import SavedStrains from "./components/SavedStrains";
 import Profile from "./components/Profile";
 import Settings from "./components/Settings";
 import ChangeEmail from "./components/ChangeEmail";
+import SafetyNet from "./components/SafetyNet";
 // Styling
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -45,6 +46,9 @@ function App() {
         </Route>
         <Route path="/change-email">
           <ChangeEmail />
+        </Route>
+        <Route path="/safe">
+          <SafetyNet />
         </Route>
         <Route exact path="/">
           <LandingPage />
