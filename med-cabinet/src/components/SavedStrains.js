@@ -1,20 +1,52 @@
 // React
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { connect } from 'react-redux';
 import Nav from "./Nav";
+// Axios
+import { axiosWithAuth } from "../utils/axiosWithAuth";
 // Actions
 import { getSavedStrains } from '../actions';
-import  Star  from "./img/star.png";
 //Import Styling
 import "./SavedStrains.css"
+import  Star  from "./img/star.png";
+
 
 const SavedStrains = props => {
     console.log(props);
     console.log(props.savedStrains);
+    const [strainID, setStrainID] = useState({});
+
+    useEffect(() => {
+        console.log(strainID);
+        if (strainID) {
+            axiosWithAuth()
+                .delete(`/users/${strainID}/strains`)
+                .then(res => {
+                    console.log(res);
+                })
+                .catch(err => console.log(err));
+        }
+    }, [strainID])
+
+    // const deleteStrain = id => {
+    //     axiosWithAuth()
+    //         .delete(`/users/${id}/strains`)
+    //         .then(res => {
+    //             console.log(res);
+    //         })
+    //         .catch(err => console.log(err));
+    // }
 
     useEffect(() => {
         props.getSavedStrains();
     }, [])
+
+    const clickHandler = e => {
+        e.preventDefault();
+        console.log("E.TARGET.ID", e.target.id);
+        setStrainID({ strainID: e.target.id });
+        console.log("STRAINID", strainID);
+    }
 
 
     return (
@@ -47,7 +79,8 @@ const SavedStrains = props => {
                 <div className="description">
                     <h3>Description:</h3>
                     <p>{item.strain_description}</p>
-                    </div>
+                </div>
+                <button id={item.strain_id} onClick={clickHandler}>Delete</button>
                 </div>
             ))}
             </div>
