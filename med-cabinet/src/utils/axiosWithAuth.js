@@ -8,7 +8,7 @@ export const axiosWithAuth = () => {
   const password = localStorage.getItem('password');
 
   return axios.create({
-    baseURL: 'https://med-cabinet-web25.herokuapp.com/api',
+    baseURL: 'https://strains-backend.herokuapp.com/api',
     headers: {
       authorization: token,
       email: email,
