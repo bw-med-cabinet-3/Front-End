@@ -1,0 +1,14 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    width: 100%;
+}
+.cardBox1 {
+    border: 1px solid black;
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10%;
+}

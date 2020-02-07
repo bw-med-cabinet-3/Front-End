@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Nav from "./Nav";
 // Actions
 import { getSavedStrains } from '../actions';
-import { Star } from "./img/star.png";
+import  Star  from "./img/star.png";
 //Import Styling
 import "./SavedStrains.css"
 
@@ -25,7 +25,7 @@ const SavedStrains = props => {
             {props.error && <p>{props.error}</p>}
             {props.isFetching && <p>Loading...</p>}
             {props.savedStrains && props.savedStrains.map(item => (
-                <div className="cardBox">
+                <div className="cardBox1">
                 <h2>Strain: {SavedStrains.strain_name}</h2>
                 <p>Type: {props.type}</p>
                 <h3>Rating:</h3>

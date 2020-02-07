@@ -173,7 +173,7 @@ const StrainCard = (props) => {
                             <img src={ Star } alt="logo credit"/>
                         </div>
                         <button><Link to={`/strain-details/${props.strain_id}`} style={{ textDecoration: 'none', color: 'green' }}>Strain Details</Link></button>
-                        <button onClick={clickHandler}>Save Strain</button>
+                        <button id={props.strain_id} onClick={clickHandler}>Save Strain</button>
                         </div>
                     </div>
             </div>
