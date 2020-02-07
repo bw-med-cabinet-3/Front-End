@@ -48,6 +48,7 @@ const SavedStrains = props => {
                     <h3>Description:</h3>
                     <p>{item.strain_description}</p>
                     </div>
+                    <button>Remove from Favorites</button>
                 </div>
             ))}
             </div>
