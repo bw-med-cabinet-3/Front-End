@@ -13,10 +13,16 @@ const Settings = props => {
   console.log(localStorage);
 
   // Using styling from Profile to match
+  const Whole = styled.div`
+  width: 100%;
+  height: 98vh;
+  padding-top: 13%;
+  background: rgb(213,255,240);
+  background: radial-gradient(circle, rgba(213,255,240,1) 0%, rgba(199,199,199,0.25253851540616246) 100%);
+  `;
   const Wrap = styled.div`
         h2 {
             text-align: center;
-            margin-top: 5%;
         }
     `;
     const Pcard = styled.div`
@@ -28,7 +34,6 @@ const Settings = props => {
         flex-flow: column nowrap;
         width: 30%;
         margin: 0 auto;
-        margin-top: 10%;
         border: 1px solid green;
         padding: 5% 0;
         h2 {
@@ -65,13 +70,15 @@ const Settings = props => {
     `;
 
   return (
-    <Pcard>
-      <p>Email: {localStorage.email}</p>
-      <p>Password: {localStorage.password}</p>
-      <ButtonWrap>
-        <StyledLink to="/change-email">Change Email</StyledLink>
-      </ButtonWrap>
-    </Pcard>
+    <Whole>
+      <Pcard>
+        <p>Email: {localStorage.email}</p>
+        <p>Password: {localStorage.password}</p>
+        <ButtonWrap>
+          <StyledLink to="/change-email">Change Email</StyledLink>
+        </ButtonWrap>
+      </Pcard>
+     </Whole> 
   );
 };
 
