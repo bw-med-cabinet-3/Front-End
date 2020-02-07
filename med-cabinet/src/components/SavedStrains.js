@@ -4,6 +4,9 @@ import { connect } from 'react-redux';
 import Nav from "./Nav";
 // Actions
 import { getSavedStrains } from '../actions';
+import { Star } from "./img/star.png";
+//Import Styling
+import "./SavedStrains.css"
 
 const SavedStrains = props => {
     console.log(props);
@@ -15,14 +18,37 @@ const SavedStrains = props => {
 
 
     return (
-        <div>
+        <div className="wrap">
             <Nav />
+            <div className="savedTitle">
             <h2>This is saved strains</h2>
             {props.error && <p>{props.error}</p>}
             {props.isFetching && <p>Loading...</p>}
             {props.savedStrains && props.savedStrains.map(item => (
-                <p>{item.strain_name}</p>
+                <div className="cardBox">
+                <h2>Strain: {SavedStrains.strain_name}</h2>
+                <p>Type: {props.type}</p>
+                <h3>Rating:</h3>
+                <div className="rateBox"> 
+                    <h4>{props.rating}</h4>
+                    <img src={Star} alt="icon for rating"/>
+                </div>
+                <div className="effects">
+                <h3>Effects:</h3>
+                    <ul>{props.effects}</ul>              
+                </div>
+                <div className="flavors">
+                <h3>Flavors:</h3>
+                    <ul>{props.flavors}</ul>                
+                </div>
+                <div className="description">
+                    <h3>Description:</h3>
+                    <p>{props.description}</p>
+                    </div>
+                </div>
+
             ))}
+            </div>
         </div>
     );
 };

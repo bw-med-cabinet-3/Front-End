@@ -19,6 +19,9 @@ body, ul {
     position: absolute;
     top:10%;
     left: 41%;
+    color: black;
+}
+.titleHome h2 {
     color: green;
 }
 .cardDiv {
