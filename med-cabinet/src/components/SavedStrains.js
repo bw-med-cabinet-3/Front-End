@@ -22,30 +22,30 @@ const SavedStrains = props => {
             <Nav />
             <div className="savedTitle">
             <h2>This is saved strains</h2>
-            {props.error && <p>{props.error}</p>}
-            {props.isFetching && <p>Loading...</p>}
+            {props.error && <div><p>{props.error}</p></div>}
+            {props.isFetching && <div><p>Loading...</p></div>}
             {props.savedStrains && props.savedStrains.map(item => (
                 <div className="cardBox1">
-                <h2>Strain: {SavedStrains.strain_name}</h2>
+                <h2>Strain: {item.strain_name}</h2>
                 <div className="type">
-                <h4>Type: {props.type}</h4>
+                <h4>Type: {item.strain_type}</h4>
                 </div>
-                <h3>Rating:</h3>
                 <div className="rateBox"> 
-                    <h4>{props.rating}</h4>
+                    <h3>Rating:</h3>
+                    <h4>{item.strain_rating}</h4>
                     <img src={Star} alt="icon for rating"/>
                 </div>
                 <div className="effects">
                 <h3>Effects:</h3>
-                    <ul>{props.effects}</ul>              
+                    <p>{item.strain_effects}</p>              
                 </div>
                 <div className="flavors">
                 <h3>Flavors:</h3>
-                    <ul>{props.flavors}</ul>                
+                    <p>{item.strain_flavors}</p>                
                 </div>
                 <div className="description">
                     <h3>Description:</h3>
-                    <p>{props.description}</p>
+                    <p>{item.strain_description}</p>
                     </div>
                 </div>
             ))}

@@ -5,7 +5,12 @@ body, ul {
 .wrap {
     width: 100%;
 }
+.savedTitle {
+
+}
 .cardBox1 {
+    display:flex;
+    flex-flow: row wrap;
     border: 1px solid black;
     width: 30%;
     text-align: center;
@@ -14,12 +19,26 @@ body, ul {
 }
 .cardBox1 h2 {
     color: green;
+    border: 1px solid red;
+    width: 100%;
 }
 .cardBox1 .type {
     width: 40%;
     height: 150px;
-    background: rgb(76,0,147);
-    background: linear-gradient(312deg, rgba(76,0,147,0.8015581232492998) 0%, rgba(245,245,245,1) 50%, rgba(17,255,0,0.804359243697479) 100%);
+    background: rgb(45,0,88);
+    background: linear-gradient(312deg, rgba(45,0,88,0.9752275910364145) 0%, rgba(245,245,245,0) 50%, rgba(14,207,0,0.9051995798319328) 100%);
     border-radius: 5%;
-    
+    box-shadow: 0 4px 8px 0 rgba( 0, 0, 0, 0.2), 0 6px 20px 0 rgba( 0, 0, 0, 0.19);
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
+.cardBox1 .rateBox {
+    border: 1px solid blue;
+    width: 50%;
+}
+.cardBox1 .effects {
+    width: 100%;
+    margin-top: 5%;
+}
+.card
