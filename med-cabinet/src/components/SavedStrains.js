@@ -4,6 +4,9 @@ import { connect } from 'react-redux';
 import Nav from "./Nav";
 // Actions
 import { getSavedStrains } from '../actions';
+import  Star  from "./img/star.png";
+//Import Styling
+import "./SavedStrains.css"
 
 const SavedStrains = props => {
     console.log(props);
@@ -15,15 +18,39 @@ const SavedStrains = props => {
 
 
     return (
-        <div>
+        <div className="wrap">
             <Nav />
-            <h2>This is saved strains</h2>
-            {props.error && <p>{props.error}</p>}
-            {props.isFetching && <p>Loading...</p>}
+            <div className="savedTitle">
+            <h9>Saved By: {localStorage.firstName}</h9>
+            </div>
+            {props.error && <div><p>{props.error}</p></div>}
+            {props.isFetching && <div><p>Loading...</p></div>}
             {props.savedStrains && props.savedStrains.map(item => (
-                <p>{item.strain_name}</p>
+                <div className="cardBox1">
+                <h2>Strain: {item.strain_name}</h2>
+                <div className="type">
+                <h3>{item.strain_type}</h3>
+                </div>
+                <div className="rateBox"> 
+                    <h3>Rating:</h3>
+                    <h3>{item.strain_rating}</h3>
+                    <img src={Star} alt="icon for rating"/>
+                </div>
+                <div className="effects">
+                <h3>Effects:</h3>
+                    <p>{item.strain_effects}</p>              
+                </div>
+                <div className="flavors">
+                <h3>Flavors:</h3>
+                    <p>{item.strain_flavors}</p>                
+                </div>
+                <div className="description">
+                    <h3>Description:</h3>
+                    <p>{item.strain_description}</p>
+                    </div>
+                </div>
             ))}
-        </div>
+            </div>
     );
 };
 

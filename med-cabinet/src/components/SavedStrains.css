@@ -1,0 +1,79 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    width: 100%;
+    background: rgb(213,255,240);
+    background: radial-gradient(circle, rgba(213,255,240,1) 0%, rgba(199,199,199,0.25253851540616246) 100%);
+}
+.cardBox1 {
+    display:flex;
+    flex-flow: row wrap;
+    border: 1px solid black;
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10%;
+    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+    background: rgb(45,0,88);
+    background: linear-gradient(312deg, rgba(45,0,88,0.2189250700280112) 0%, rgba(228,228,228,0) 50%, rgba(14,207,0,0.19931722689075626) 100%);
+
+}
+.savedTitle {
+    text-align: center;
+}
+.cardBox1 h2 {
+    color: green;
+    background: rgb(45,0,88);
+    background: linear-gradient(312deg, rgba(45,0,88,0.2189250700280112) 0%, rgba(228,228,228,0) 50%, rgba(14,207,0,0.19931722689075626) 100%);
+    border: none;
+     box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 40px 0 rgba( 12, 102, 7, 0.19);
+    width: 100%;
+    margin-top:3%;
+    margin-bottom: 10%;
+}
+.cardBox1 .type {
+    width: 40%;
+    height: 150px;
+    /* background: rgb(45,0,88);
+    background: linear-gradient(312deg, rgba(45,0,88,0.9752275910364145) 0%, rgba(245,245,245,0) 50%, rgba(14,207,0,0.9051995798319328) 100%); */
+    background: rgb(45,0,88);
+    background: linear-gradient(312deg, rgba(45,0,88,0.9752275910364145) 0%, rgba(0,0,0,0.8183648459383753) 50%, rgba(14,207,0,0.9051995798319328) 100%);
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba( 0, 0, 0, 0.2), 0 6px 20px 0 rgba( 0, 0, 0, 0.19);
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.type h3 {
+    color: #00e64d;
+    margin-top: 23%;
+}
+.cardBox1 .rateBox {
+    width: 50%;
+    padding-top: 5%;
+}
+.cardBox1 .effects {
+    width: 100%;
+    margin-top: 5%;
+}
+.effects h3 {
+    margin-bottom: 5%;
+}
+.cardBox1 .flavors {
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.flavors h3 {
+    margin-bottom: 20%;
+}
+.cardBox1 .description {
+    margin-bottom: 5%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+.description h3 {
+    margin-bottom: 5%;
+}
