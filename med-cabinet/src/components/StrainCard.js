@@ -133,7 +133,7 @@ const StrainCard = (props) => {
         setStrainID({ strainID: e.target.id });
         console.log("STRAINID", strainID);
         // setStrainData(strainHolder);
-        // alert("Strain saved!");
+        alert("Strain saved!");
     };
 
     const strainHolder = {
@@ -183,7 +183,7 @@ const StrainCard = (props) => {
                         <h6>{props.rating}</h6>
                             <img src={ Star } alt="logo credit"/>
                         </div>
-                        <button><Link to={`/strain-details/${props.strain_id}`} style={{ textDecoration: 'none', color: 'green' }}>Strain Details</Link></button>
+                        {/* <button><Link to={`/strain-details/${props.strain_id}`} style={{ textDecoration: 'none', color: 'green' }}>Strain Details</Link></button> */}
                         <button id={props.strain_id} onClick={clickHandler}>Save Strain</button>
                         </div>
                     </div>
