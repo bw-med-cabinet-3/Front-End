@@ -23,7 +23,7 @@ const SavedStrains = props => {
             <div className="savedTitle">
             <h9>.</h9>
             </div>
-            <div>
+            <div className="h1Title">
             <h1>Saved Strains</h1>
             </div>
             {props.error && <div><p>{props.error}</p></div>}

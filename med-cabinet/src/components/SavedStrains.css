@@ -24,6 +24,12 @@ body, ul {
     text-align: center;
     color: green;
 }
+.h1Title {
+        position: absolute;
+        top:11.5%;
+        right: 43%;
+        color: green;
+}
 .cardBox1 h2 {
     color: green;
     background: rgb(45,0,88);
