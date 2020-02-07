@@ -27,7 +27,9 @@ const SavedStrains = props => {
             {props.savedStrains && props.savedStrains.map(item => (
                 <div className="cardBox1">
                 <h2>Strain: {SavedStrains.strain_name}</h2>
-                <p>Type: {props.type}</p>
+                <div className="type">
+                <h4>Type: {props.type}</h4>
+                </div>
                 <h3>Rating:</h3>
                 <div className="rateBox"> 
                     <h4>{props.rating}</h4>
@@ -46,10 +48,9 @@ const SavedStrains = props => {
                     <p>{props.description}</p>
                     </div>
                 </div>
-
             ))}
             </div>
-        </div>
+            </div>
     );
 };
 
