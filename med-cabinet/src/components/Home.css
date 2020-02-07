@@ -24,7 +24,7 @@ body, ul {
 .titleHome h2 {
     color: green;
 }
-.cardDiv {
+/* .cardDiv {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -33,10 +33,13 @@ body, ul {
     background: none;
     position: relative;
     bottom: 80%;
-}
+} */
 .card1{
-    width: 30%;
+    width: 18.5%;
     height: 200px;
+    position: absolute;
+    top:60%;
+    left: 10%;
 }
 .card1 .button1 {
     width: 350px;
