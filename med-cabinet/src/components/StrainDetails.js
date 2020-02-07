@@ -1,5 +1,8 @@
 // React
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+// import { BrowserRouter as useParams } from 'react-router-dom';
+// Axios
+import { axiosWithAuth } from '../utils/axiosWithAuth';
 // Styling
 import {
   Card, CardBody,
@@ -7,6 +10,20 @@ import {
 } from 'reactstrap';
 //Icon Import
 import Star from "./img/star.png"
+
+
+// const [strainDeets, setStrainDeets] = useState({});
+// console.log(strainDeets);
+
+// useEffect(() => {
+//   axiosWithAuth()
+//     .get(`/api/strains/${strainLocation}`)
+//     .then(res => {
+//       console.log(res);
+//       setStrainDeets(res.data);
+//     })
+//     .catch(err => console.log(err));
+// }, [])
 
 
 const StrainDetails = props => {
