@@ -113,6 +113,8 @@ const StrainCard = (props) => {
     // }
     // `;
     const [strainID, setStrainID] = useState();
+    const [strainData, setStrainData] = useState({});
+    console.log(strainData)
 
     useEffect(() => {
         console.log(strainID);
@@ -130,8 +132,19 @@ const StrainCard = (props) => {
         console.log("E.TARGET.ID", e.target.id);
         setStrainID({ strainID: e.target.id });
         console.log("STRAINID", strainID);
+        // setStrainData(strainHolder);
         // alert("Strain saved!");
     };
+
+    // const strainHolder = {
+    //     strain_id: props.strain_id,
+    //     strain_name: props.strain_name,
+    //     strain_type: props.strain_type,
+    //     strain_rating: props.strain_rating,
+    //     strain_description: props.strain_description,
+    //     strain_effects: props.strain_effects,
+    //     strain_flavors: props.strain_flavors
+    // }
     
 
     // {strainID: {props.strain_id}}
@@ -173,6 +186,12 @@ const StrainCard = (props) => {
                             <img src={ Star } alt="logo credit"/>
                         </div>
                         <button><Link to={`/strain-details/${props.strain_id}`} style={{ textDecoration: 'none', color: 'green' }}>Strain Details</Link></button>
+                        <button
+                         id={props.strain_id}
+                         onClick={clickHandler}
+                        >
+                            Save Strain
+                        </button>
                         </div>
                     </div>
             </div>
