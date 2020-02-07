@@ -1,6 +1,9 @@
 .App {
   text-align: center;
   overflow: hidden;
+  font-family: 'quicksandregular', Arial, sans-serif;
+  font-weight:normal;
+  font-style:normal;
 }
 
 .App-logo {

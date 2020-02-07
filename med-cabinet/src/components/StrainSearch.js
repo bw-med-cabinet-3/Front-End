@@ -104,7 +104,7 @@ const StrainSearch = props => {
                 type="text"
                 name="search"
                 value={query}
-                placeholder="Search a Strain by Name"/>
+                placeholder="Search a Strain"/>
             </form>
             {/* {data.map((item, i) => (
                 <p key={i}>{item.strain_name}</p>
