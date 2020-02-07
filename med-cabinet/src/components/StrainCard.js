@@ -136,18 +136,16 @@ const StrainCard = (props) => {
         // alert("Strain saved!");
     };
 
-    // const strainHolder = {
-    //     strain_id: props.strain_id,
-    //     strain_name: props.strain_name,
-    //     strain_type: props.strain_type,
-    //     strain_rating: props.strain_rating,
-    //     strain_description: props.strain_description,
-    //     strain_effects: props.strain_effects,
-    //     strain_flavors: props.strain_flavors
-    // }
-    
-
-    // {strainID: {props.strain_id}}
+    const strainHolder = {
+        strain_id: props.strain_id,
+        strain_name: props.name,
+        strain_type: props.type,
+        strain_rating: props.rating,
+        strain_description: props.description,
+        strain_effects: props.effects,
+        strain_flavors: props.flavors
+    }
+    console.log(strainHolder);
 
 
     return (
