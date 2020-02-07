@@ -14,7 +14,7 @@ body, ul {
     width: 30%;
     text-align: center;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 10%;
     box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
     background: rgb(45,0,88);
     background: linear-gradient(312deg, rgba(45,0,88,0.2189250700280112) 0%, rgba(228,228,228,0) 50%, rgba(14,207,0,0.19931722689075626) 100%);
@@ -22,6 +22,7 @@ body, ul {
 }
 .savedTitle {
     text-align: center;
+    color: green;
 }
 .cardBox1 h2 {
     color: green;
@@ -94,4 +95,13 @@ body, ul {
     border: 1px solid #800000;
     border-radius: 5%;
     transition: all 0.3s ease;
+}
+h1 {
+    position: absolute;
+    top:11.5%;
+    right: 43%;
+    color: green;
+}
+.savedTitle {
+    text-align: end;
 }

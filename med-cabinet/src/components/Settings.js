@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 // import { getUser } from '../actions';
 // Styling
 import styled from "styled-components";
+import Nav from "./Nav";
 
 
 const Settings = props => {
@@ -70,6 +71,7 @@ const Settings = props => {
     `;
 
   return (
+
     <Whole>
       <Pcard>
         <p>Email: {localStorage.email}</p>

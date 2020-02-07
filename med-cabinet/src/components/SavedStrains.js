@@ -21,7 +21,10 @@ const SavedStrains = props => {
         <div className="wrap">
             <Nav />
             <div className="savedTitle">
-            <h9>Saved By: {localStorage.firstName}</h9>
+            <h9>.</h9>
+            </div>
+            <div>
+            <h1>Saved Strains</h1>
             </div>
             {props.error && <div><p>{props.error}</p></div>}
             {props.isFetching && <div><p>Loading...</p></div>}
