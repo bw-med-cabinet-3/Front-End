@@ -1,0 +1,20 @@
+.profileCard {
+    box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid green;
+    background: rgb(45,0,88);
+    background: linear-gradient(312deg, rgba(45,0,88,0.2189250700280112) 0%, rgba(228,228,228,0) 50%, rgba(14,207,0,0.19931722689075626) 100%);
+}
+.profileCard h2 {
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    color: green;
+}
+.profileCard h4 {
+    margin: 0 auto;
+    margin-bottom: 2%;
+}

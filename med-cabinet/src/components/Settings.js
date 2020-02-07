@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 // import { getUser } from '../actions';
 // Styling
 import styled from "styled-components";
+import Nav from "./Nav";
 
 
 const Settings = props => {
@@ -13,10 +14,16 @@ const Settings = props => {
   console.log(localStorage);
 
   // Using styling from Profile to match
+  const Whole = styled.div`
+  width: 100%;
+  height: 98vh;
+  padding-top: 13%;
+  background: rgb(213,255,240);
+  background: radial-gradient(circle, rgba(213,255,240,1) 0%, rgba(199,199,199,0.25253851540616246) 100%);
+  `;
   const Wrap = styled.div`
         h2 {
             text-align: center;
-            margin-top: 5%;
         }
     `;
     const Pcard = styled.div`
@@ -28,7 +35,6 @@ const Settings = props => {
         flex-flow: column nowrap;
         width: 30%;
         margin: 0 auto;
-        margin-top: 10%;
         border: 1px solid green;
         padding: 5% 0;
         h2 {
@@ -42,32 +48,39 @@ const Settings = props => {
         }
     `;
     const StyledLink = styled(Link)`
-        background: white;
+    color: green;
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    margin-top:5%;
+    :hover {
         color: green;
-        border: 1px solid green;
-        border-radius: 8%;
-        padding-left: 25px;
-        padding-right: 25px;
-        display: flex;
-        margin 0 auto;
-        margin-top: 5%;
-        :hover {
-            background-color: #00b33c;
-            transition: all 0.5s ease;
-        }
+        text-decoration: none;
+        border-radius: 7%;
+        box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+        transition: all 0.3s ease;
+    }
+    :(Link) {
+      text-decoration: none;
+    }
     `;
     const ButtonWrap = styled.div`
         display: flex;
     `;
 
   return (
-    <Pcard>
-      <p>Email: {localStorage.email}</p>
-      <p>Password: {localStorage.password}</p>
-      <ButtonWrap>
-        <StyledLink to="/change-email">Change Email</StyledLink>
-      </ButtonWrap>
-    </Pcard>
+
+    <Whole>
+      <Pcard>
+        <p>Email: {localStorage.email}</p>
+        <p>Password: {localStorage.password}</p>
+        <ButtonWrap>
+          <StyledLink to="/change-email">Change Email</StyledLink>
+        </ButtonWrap>
+      </Pcard>
+     </Whole> 
   );
 };
 

@@ -109,7 +109,6 @@ const Home = () => {
         </div>
       </Typist>
 
-      <div className="cardDiv">
       
         <div className="card1">
           <Link to="/strain-search">
@@ -126,8 +125,7 @@ const Home = () => {
           <button className="button3">Take Me To My Profile</button>
         </Link>
         </div>
-      </div>
-      </div>
+       </div>
   );
 };
 

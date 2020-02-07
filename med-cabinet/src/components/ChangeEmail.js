@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 // Axios
 import { axiosWithAuth } from '../utils/axiosWithAuth';
+//import Styling
+import "./ChangeEmail.css";
+import Nav from "./Nav";
 
 
 const ChangeEmail = () => {
@@ -27,8 +30,11 @@ const ChangeEmail = () => {
   }
 
   return (
-    <div>
+    <div className="wrappingPage">
+    <Nav />
+    <div className="emailStyle">
       <h2>Current email: {localStorage.email}</h2>
+      <div className="formEmail">
       <form onSubmit={handleSubmit}>
         <input
           type="email"
@@ -40,6 +46,8 @@ const ChangeEmail = () => {
         />
         <button>Submit change</button>
       </form>
+      </div>
+    </div>
     </div>
   );
 };
