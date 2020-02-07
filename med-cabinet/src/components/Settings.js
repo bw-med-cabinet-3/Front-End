@@ -42,19 +42,23 @@ const Settings = props => {
         }
     `;
     const StyledLink = styled(Link)`
-        background: white;
+    color: green;
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    margin-top:5%;
+    :hover {
         color: green;
-        border: 1px solid green;
-        border-radius: 8%;
-        padding-left: 25px;
-        padding-right: 25px;
-        display: flex;
-        margin 0 auto;
-        margin-top: 5%;
-        :hover {
-            background-color: #00b33c;
-            transition: all 0.5s ease;
-        }
+        text-decoration: none;
+        border-radius: 7%;
+        box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
+        transition: all 0.3s ease;
+    }
+    :(Link) {
+      text-decoration: none;
+    }
     `;
     const ButtonWrap = styled.div`
         display: flex;
