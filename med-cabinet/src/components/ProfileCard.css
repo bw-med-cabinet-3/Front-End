@@ -5,6 +5,8 @@
     width: 100%;
     margin: 0 auto;
     border: 1px solid green;
+    background: rgb(45,0,88);
+    background: linear-gradient(312deg, rgba(45,0,88,0.2189250700280112) 0%, rgba(228,228,228,0) 50%, rgba(14,207,0,0.19931722689075626) 100%);
 }
 .profileCard h2 {
     margin: 0 auto;
