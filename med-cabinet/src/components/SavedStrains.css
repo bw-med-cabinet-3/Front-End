@@ -96,12 +96,6 @@ body, ul {
     border-radius: 5%;
     transition: all 0.3s ease;
 }
-h1 {
-    position: absolute;
-    top:11.5%;
-    right: 43%;
-    color: green;
-}
 .savedTitle {
     text-align: end;
 }
