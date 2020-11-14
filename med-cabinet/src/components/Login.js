@@ -22,14 +22,6 @@ const Login = () => {
 
   }
 
-
-  // const Page = styled.div`
-  // width: 100%;
-  // height: 110vh;
-  // background: rgb(57,195,97);
-  // background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
-  // `;
-
   // Set initial state for credentials, fetch check and error
   const [credentials, setCredentials] = useState({
     email: '',
@@ -75,30 +67,30 @@ const Login = () => {
 
   return (
     <div className="page">
-    <div className="bgWrap">
-    <Particles 
-    params={ particleOpt }
-     style={{
-      "zIndex": "-1"
-    }}
-    />
-    <div className="login">
-      <div className="login-cont">
-        <h1>Login</h1>
-        <Form inline onSubmit={login}>
-          <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-            <Input type="email" name="email" placeholder="Email" value={credentials.email} onChange={handleChanges} required />
-          </FormGroup>
-          <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-            <Input type="password" name="password" placeholder="Password" value={credentials.password} onChange={handleChanges} required />
-          </FormGroup>
-          <Button>Log in</Button>
-        </Form>
-        <p>{isFetching ? 'Loading...' : null}</p>
-        <p>{error ? error : null}</p>
+      <div className="bgWrap">
+        <Particles
+          params={particleOpt}
+          style={{
+            "zIndex": "-1"
+          }}
+        />
+        <div className="login">
+          <div className="login-cont">
+            <h1>Login</h1>
+            <Form inline onSubmit={login}>
+              <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+                <Input type="email" name="email" placeholder="Email" value={credentials.email} onChange={handleChanges} required />
+              </FormGroup>
+              <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+                <Input type="password" name="password" placeholder="Password" value={credentials.password} onChange={handleChanges} required />
+              </FormGroup>
+              <Button>Log in</Button>
+            </Form>
+            <p>{isFetching ? 'Loading...' : null}</p>
+            <p>{error ? error : null}</p>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
     </div>
   );
 };
