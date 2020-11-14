@@ -33,7 +33,6 @@ const Login = () => {
   // Set credentials to it's state
   const handleChanges = e => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
-    console.log("NEW credentials from Login", credentials);
   };
 
   // POST credentials to local storage
@@ -45,7 +44,6 @@ const Login = () => {
     axiosWithAuth()
       .post('/users/login', credentials)
       .then(res => {
-        console.log(res);
         if (res.data.token) {
           // Set items to local storage
           localStorage.setItem('token', res.data.token);

@@ -37,7 +37,6 @@ const Register = () => {
   // Set credentials to it's state
   const handleChanges = e => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
-    console.log("NEW credentials from Registration component", credentials);
   };
 
   // POST credentials to local storage token
@@ -48,7 +47,6 @@ const Register = () => {
     axiosWithAuth()
       .post('/users/register', credentials)
       .then(res => {
-        console.log(res.data);
         history.push('/login');
       })
       .catch(err => console.log(err));
