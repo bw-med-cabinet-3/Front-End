@@ -3,7 +3,7 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "medCab.png",
+      "src": "medcab.png",
       "sizes": "250x236",
       "type": "image/png"
     },
