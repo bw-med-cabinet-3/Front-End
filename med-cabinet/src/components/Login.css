@@ -12,12 +12,8 @@ body, ul {
 
 .login h1 {
     text-align: center;
-    /* position: absolute; */
-    /* top: 32%; */
-    /* right: 47%; */
-    /* margin: 0 auto; */
     color: green;
-    /* margin-top: -30%; */
+    margin-bottom: 10;
 }
 
 .login form {
