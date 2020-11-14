@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden;
 }
+
 .Page {
     width:100%;
     overflow-y: hidden;
@@ -9,6 +10,7 @@ body {
     background: rgb(57,195,97);
     background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
 }
+
 .Buttons {
     position: relative;
     top: 32.5%;
@@ -17,36 +19,36 @@ body {
     background: none;
     margin: 0 auto;
     z-Index: 1;
-    flex-flow: row nowrap;
+    display: flex;
+    flex-direction: column;
 }
+
 .Login {
     color: green;
-    width: 40%;
     height: 60px;
-    margin-left: 16%;
-    margin-top: 12%;
     background: none;
     border: 1px solid green;
     border-radius: 5%;
     box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
 }
+
 .Login:hover {
         box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
         border:none;
         background: rgb(161,255,188);
         background: radial-gradient(circle, rgba(161,255,188,0.8463760504201681) 0%, rgba(190,255,206,0) 61%);
 }
+
 .Rbutton {
     color: green;
-    width: 40%;
     height: 60px;
-    margin-left: 16%;
     margin-top: 12%;
     background: none;
     border: 1px solid green;
     border-radius: 5%;
     box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
 }
+
 .Rbutton:hover {
     box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
     border:none;
