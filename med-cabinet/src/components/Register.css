@@ -2,6 +2,7 @@ body, ul {
     margin: 0;
     padding: 0;
 }
+
 .Page {
     width: 100%;
     z-Index: -1;
@@ -10,6 +11,7 @@ body, ul {
     background: rgb(57,195,97);
     background: radial-gradient(circle, rgba(57,195,97,1) 0%, rgba(165,255,188,1) 100%);
 }
+
 .Register {
     width: 18%;
     height: 500px;
@@ -18,6 +20,7 @@ body, ul {
     right: 40%;
     top: 20%;
 }
+
 .Register .Card  {
     width: 80%;
     display: flex;
@@ -26,27 +29,31 @@ body, ul {
     margin-top: 5%;
     z-Index: 2;
     text-align: center;
+    align-items: center;
 }
+
 .Card h2 {
     margin-bottom: 15%;
 }
+
 .Card Input {
     text-align: center;
     margin-bottom: 12%;
 }
-.Card Button {
 
+.Card Button {
     display: flex;
     justify-content: center;
     width: 70%;
     color:green;
-    height: 60px;
+    height: 40px;
     margin-top: 12%;
     background: none;
     border: 1px solid green;
     border-radius: 5%;
     box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
 }
+
 .Card Button:hover {
     box-shadow: 0 4px 8px 0 rgba( 12, 102, 7, 0.2), 0 6px 20px 0 rgba( 12, 102, 7, 0.19);
     border:none;
@@ -54,11 +61,19 @@ body, ul {
     background: radial-gradient(circle, rgba(161,255,188,0.8463760504201681) 0%, rgba(190,255,206,0) 61%);
     color: forestgreen
 }
+
 .Card p {
     text-align: center;
     margin-top: 5%;
 }
+
 .bgWrap {
     z-Index: -1;
     height: 150vh;
+}
+
+@media (max-width: 575px) {
+  .form-inline {
+    width: 230%;
+  }
 }
