@@ -74,8 +74,8 @@ const Login = () => {
         />
         <div className="login">
           <div className="login-cont">
-            <h1>Login</h1>
             <Form inline onSubmit={login}>
+              <h1>Login</h1>
               <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                 <Input type="email" name="email" placeholder="Email" value={credentials.email} onChange={handleChanges} required />
               </FormGroup>
